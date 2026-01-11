@@ -1039,12 +1039,14 @@ footer div:last-child a {
   h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    color: white;
   }
   
   h2 {
     font-size: 1.5rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
+    color: white;
   }
   
   p,
@@ -1058,6 +1060,7 @@ footer div:last-child a {
   nav a,
   logo a {
     font-weight: 700;
+    color: white;
   }
 
 
