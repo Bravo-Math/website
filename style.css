@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  color: #353839;
+  color: white; /* used to be #353839*/ 
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: black; /* new line for only dark mode */
 }
 
 img {
@@ -90,7 +91,7 @@ nav section .panel {
   border: none;
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: #111 /* used to be lightgray */;
 }
 
 nav section .panel a {
@@ -404,7 +405,7 @@ section div.panel p {
   min-width: 280px;
   padding-top: 20px;
   margin-bottom: 21px;
-  background-color: lightgray;
+  background-color: #111 /* used to be lightgray */;
 }
 
 table {
@@ -413,7 +414,7 @@ table {
 }
 
 table, th, td {
-  border: 1px solid;
+  border: 1px solid #333 ; /* new colour to make contrast less harsh */
   border-collapse: collapse;
 }
 
@@ -515,7 +516,7 @@ th, td {
   text-decoration: none;
   line-height: 1.45;
   font-size: 16px;
-  color: #353839;
+  color: white /* used to be #353839; */
   text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -943,8 +944,8 @@ footer div:last-child a {
 
 
 
-/* DARK MODE */
-@media (prefers-color-scheme: dark) {
+/* DARK MODE entire selection deleted to make dark mode default */
+/*@media (prefers-color-scheme: dark) { */
 
   body {
     background-color: #272524;
@@ -965,7 +966,9 @@ footer div:last-child a {
   .home_container div.image-right {
     background-image: url(images/right-dark.png);
     background-repeat: no-repeat;
-  }
+  /* } */ 
+  
+  
 
   @media screen and (max-width: 550px) {
     .home_container {
