@@ -1091,3 +1091,17 @@ a em:hover {
   text-decoration: underline;  /* optional */
 }
 
+
+
+/* Make toggler larger and bright cyan */
+.toggler {
+    font-size: 1.5rem;    /* bigger text, adjust as needed */
+    color: #00FFFF;       /* bright cyan */
+    font-weight: 700;     /* optional, makes it bold */
+    cursor: pointer;      /* ensures it still looks clickable */
+}
+
+/* Optional: change color on hover */
+.toggler:hover {
+    color: #FFFF00;       /* bright yellow on hover */
+}
