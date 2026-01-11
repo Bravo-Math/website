@@ -1105,3 +1105,18 @@ a em:hover {
 .toggler:hover {
     color: #FFFF00;       /* bright yellow on hover */
 }
+
+/* Force toggler color to bright cyan and keep it on hover/active */
+.toggler,
+.toggler:hover,
+.toggler:active,
+section .toggler,
+section .toggler:hover,
+section .toggler:active,
+section.open .toggler,
+section .toggler.active {
+    color: #00FFFF !important;  /* bright cyan */
+    font-size: 1.5rem;           /* keep it larger */
+    font-weight: 700;            /* optional bold */
+}
+
