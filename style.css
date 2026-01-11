@@ -719,20 +719,23 @@ footer {
   border-bottom: solid 1px;
   padding: 8px 0;
   width: 100%;
-  color: white;
+  color: white; /*Used to be #353839*/
 }
 
 footer div {
   display: flex;
   justify-content: space-between;
+  color: white; /*Used to be #353839*/
 }
 
 footer div:first-child a {
   padding-right: 40px;
+  color: white; /*Used to be #353839*/
 }
 
 footer div:last-child a {
   padding-left: 40px;
+  color: white; /*Used to be #353839*/
 }
 
 /* MOBILE */
@@ -775,19 +778,23 @@ footer div:last-child a {
   footer {
     flex-direction: column-reverse;
     padding: 0 0 10px 0;
+    color: white; /*Used to be #353839*/
   }
 
   footer div:first-child {
     flex-direction: row;
     padding: 0;
+    color: white; /*Used to be #353839*/
   }
 
   footer div:last-child {
     flex-direction: row;
+    color: white; /*Used to be #353839*/
   }
 
   footer a {
     padding: 10px 0 0 0 !important;
+    color: white; /*Used to be #353839*/
   }
 }
 
@@ -925,19 +932,23 @@ footer div:last-child a {
   footer {
     flex-direction: column-reverse;
     text-align: center;
+    color: white; /*Used to be #353839*/
   }
 
   footer a {
     font-size: 11px;
     padding: 8px 0 0 0 !important;
+    color: white; /*Used to be #353839*/
   }
 
   footer div:first-child {
     flex-direction: column-reverse;
+    color: white; /*Used to be #353839*/
   }
 
   footer div:last-child {
     flex-direction: column;
+    color: white; /*Used to be #353839*/
   }
 }
 
