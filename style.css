@@ -1076,3 +1076,18 @@ footer div:last-child a {
   }
 
 
+/*stuff to override previous links rules /*
+  /* Links in body */
+a,
+a em {
+  color: #00FFFF;  /* bright cyan */
+  text-decoration: underline; /* optional for extra clarity */
+}
+
+/* Links when hovered */
+a:hover,
+a em:hover {
+  color: #FFFF00;  /* bright yellow */
+  text-decoration: underline; /* optional */
+}
+
