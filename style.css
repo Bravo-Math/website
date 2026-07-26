@@ -458,6 +458,7 @@ ul ul {
 .apply_now:hover {
   background-color: #2846FF;
   color: #ffffff;
+  text-decoration: none; /* Prevents any underline on hover */
 }
 
 .photo_credit {
