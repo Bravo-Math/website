@@ -262,7 +262,7 @@ section.open .toggler:after {
 
 section .toggler:hover,
 section .toggler:hover:after {
-  color: #79c0ff;
+  color: #d29922;
 }
 
 section div.panel {
