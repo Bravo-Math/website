@@ -240,7 +240,7 @@ section .toggler {
   width: 100%;
   padding: 14px 0;
   text-align: left;
-  transition: 0.4s;
+  transition: 0.1s;
   font-size: 1.5rem;
   color: #58a6ff;
   font-weight: 700;
