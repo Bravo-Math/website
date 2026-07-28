@@ -117,7 +117,7 @@ nav a, nav .current {
   padding: 8px 16px;
   text-decoration: none;
   color: var(--text-color);
-  background-color: #1a1a1a;
+  background-color: var(--background-color);
   border: 1px solid var(--border-color);
   border-bottom: none;
   border-top-left-radius: 6px;
