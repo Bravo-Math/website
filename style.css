@@ -658,7 +658,7 @@ footer div:last-child a {
   footer {
     flex-direction: column-reverse;
     text-align: center;
-    color: #e0e0e0;
+    color: var(--text-color);
   }
 
   footer a {
