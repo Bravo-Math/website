@@ -123,7 +123,7 @@ nav *:hover {
 
 nav .current {
   font-weight: bold;
-  color: #e0e0e0;
+  color: #3DA779;
   pointer-events: none;
 }
 
