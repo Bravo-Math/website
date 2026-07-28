@@ -95,7 +95,7 @@ logo {
 logo a {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #e0e0e0;
+  color: var(--text-color);
 }
 
 .shapes {
