@@ -115,7 +115,7 @@ nav {
   display: flex;
   gap: 4px;
   align-items: flex-end;
-  border-bottom: 2px solid #a67c1e;
+  border-bottom: 2px solid #a67c1e; /* Brings the yellow line back */
   padding-bottom: 0;
 }
 
@@ -138,11 +138,11 @@ nav a:hover {
 
 nav .current {
   background-color: #2d2d2d;
-  border-color: #333 #333 #2d2d2d #333;
+  border-color: #a67c1e;
+  border-bottom: 3px solid #2d2d2d; /* Hides the yellow line just under this tab */
   position: relative;
   z-index: 2;
   margin-bottom: -2px;
-  padding-bottom: 10px;
   font-weight: bold;
   pointer-events: none;
 }
