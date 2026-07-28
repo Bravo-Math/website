@@ -472,12 +472,12 @@ footer div {
 
 footer div:first-child a {
   padding-right: 40px;
-  color: #e0e0e0;
+  color: var(--text-color);
 }
 
 footer div:last-child a {
   padding-left: 40px;
-  color: #e0e0e0;
+  color: var(--text-color);
 }
 
 /* --- MEDIA QUERIES --- */
