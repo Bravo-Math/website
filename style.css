@@ -225,7 +225,7 @@ section .toggler:after {
 }
 
 section.open .toggler {
-  color: #d29922;
+  color: #a67c1e;
 }
 
 section.open .toggler:after {
@@ -234,7 +234,7 @@ section.open .toggler:after {
 
 section .toggler:hover,
 section .toggler:hover:after {
-  color: #d29922;
+  color: #a67c1e;
 }
 
 section div.panel {
@@ -274,7 +274,7 @@ main>.top, .resources_general, .resources_calculus, .research_main, .contact_mai
 }
 
 main>.middle, .resources_integer, .contact_main_b, .article.first {
-  border-color: #d29922;
+  border-color: #a67c1e;
 }
 
 .resources_rational, .article.third {
