@@ -114,6 +114,8 @@ nav {
   display: flex;
   gap: 4px;
   align-items: flex-end;
+  border-bottom: 2px solid #a67c1e;
+  padding-bottom: 0;
 }
 
 nav a, nav .current {
@@ -136,7 +138,7 @@ nav a:hover {
 nav .current {
   background-color: #2d2d2d;
   border-color: #a67c1e;
-  border-bottom: 1px solid #2d2d2d;
+  border-bottom: 2px solid #2d2d2d;
   font-weight: bold;
   pointer-events: none;
 }
