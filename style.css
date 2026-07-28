@@ -125,8 +125,10 @@ nav .current {
   font-weight: bold;
   color: #e0e0e0;
   border: 1px solid #a67c1e;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 1px 4px;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: normal;
   pointer-events: none;
 }
 
