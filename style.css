@@ -268,7 +268,7 @@ main>.middle,
 }
 
 main>.top, .resources_general, .resources_calculus, .research_main, .contact_main, .curriculum, .covid-main {
-  border-color: #6A8869;
+  border-color: var(--accent-color);
 }
 
 main>.middle, .resources_integer, .contact_main_b, .article.first {
