@@ -133,7 +133,7 @@ nav a:hover {
 nav .current {
   background-color: var(--hover-background-color);
   border: 1px solid var(--accent-color);
-  border-bottom: 1px solid #2d2d2d;
+  border-bottom: 1px solid var(--hover-background-color);
   font-weight: bold;
   pointer-events: none;
 }
