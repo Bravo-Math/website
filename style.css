@@ -335,7 +335,7 @@ main:last-of-type {
   min-width: 280px;
   padding-top: 20px;
   margin-bottom: 21px;
-  background-color: #111111;
+  background-color: var(--background-color);
 }
 
 table {
