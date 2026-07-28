@@ -121,6 +121,11 @@ nav *:hover {
   color: #58a6ff;
 }
 
+nav .current {
+  font-weight: bold;
+  color: #e0e0e0;
+  pointer-events: none;
+}
 
 /* --- COVID NOTICE --- */
 .covid-notice {
