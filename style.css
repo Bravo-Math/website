@@ -384,7 +384,7 @@ th, td {
 .contact_row p:hover,
 .contact_row_b p:hover {
   padding-left: 10px;
-  color: #58a6ff;
+  color: var(--link-color);
 }
 
 /* --- UTILITIES & MISC --- */
