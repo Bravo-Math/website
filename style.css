@@ -276,7 +276,7 @@ main>.middle, .resources_integer, .contact_main_b, .article.first {
 }
 
 .resources_rational, .article.third {
-  border-color: #58a6ff;
+  border-color: var(--link-color);
 }
 
 .resources_algebra, .article.second {
