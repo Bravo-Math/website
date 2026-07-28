@@ -118,7 +118,7 @@ nav a, nav .current {
   text-decoration: none;
   color: var(--text-color);
   background-color: #1a1a1a;
-  border: 1px solid #333;
+  border: 1px solid var(--border-color);
   border-bottom: none;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
