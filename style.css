@@ -138,7 +138,8 @@ nav a:hover {
 nav .current {
   background-color: #2d2d2d;
   border-color: #a67c1e;
-  border-bottom: 2px solid #2d2d2d;
+  border-bottom: 3px solid #2d2d2d; /* Thicker bottom border to completely hide the line */
+  margin-bottom: -1px; /* Pulls it down slightly to overlap cleanly */
   font-weight: bold;
   pointer-events: none;
 }
