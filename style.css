@@ -69,7 +69,7 @@ b {
 }
 
 a, a em {
-  color: #58a6ff;
+  color: var(--link-color);
 }
 
 a:hover, a em:hover {
