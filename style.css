@@ -138,25 +138,6 @@ nav .current {
   pointer-events: none;
 }
 
-
-/* --- COVID NOTICE --- */
-.covid-notice {
-  width: 100%;
-  display: block;
-  border-bottom: 1px solid #333333;
-  padding: 10px 0 8px 0;
-}
-
-.covid-notice a {
-  color: #58a6ff;
-  cursor: pointer;
-  font-style: italic;
-}
-
-.covid-notice a:hover {
-  color: #58a6ff;
-}
-
 /* --- HOME CONTAINER & ANIMATIONS --- */
 .home_container {
   position: relative;
