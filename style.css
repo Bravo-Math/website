@@ -34,8 +34,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 img {
