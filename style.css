@@ -124,11 +124,8 @@ nav *:hover {
 nav .current {
   font-weight: bold;
   color: #e0e0e0;
-  border: 1px solid #a67c1e;
-  padding: 1px 4px;
-  border-radius: 2px;
-  display: inline-block;
-  line-height: normal;
+  border-bottom: 2px solid #a67c1e;
+  padding-bottom: 2px;
   pointer-events: none;
 }
 
