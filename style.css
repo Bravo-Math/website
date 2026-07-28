@@ -461,7 +461,7 @@ footer {
   border-bottom: solid 1px var(--border-color);
   padding: 8px 0;
   width: 100%;
-  color: #e0e0e0;
+  color: var(--text-color);
 }
 
 footer div {
