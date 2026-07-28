@@ -90,44 +90,58 @@ logo a {
   margin-left: 10px;
 }
 
-nav {
-  padding: 8px 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
+Here is the exact code block to find in your `style.css` file and what to replace it with to turn your navigation links into clean, browser-like tabs.
 
-nav a,
-nav * {
-  font-weight: 400;
-  font-size: 0.833rem;
-  color: #e0e0e0;
+### 1. Find this existing block in your `style.css`:
+
+*(Look for your current `nav` or `nav a` styling rules)*
+
+```css
+nav {
+  /* your existing nav rules */
 }
 
 nav a {
-  padding-right: 40px;
+  /* your existing nav link rules */
 }
 
-nav a.active,
-nav .toggler.active,
-nav a.active:hover,
-nav .toggler.active:hover {
-  color: #3DA779;
+```
+
+### 2. Replace it with this complete set of tab styles:
+
+```css
+nav {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
 }
 
-nav a:hover,
-nav *:hover {
+nav a, nav .current {
+  padding: 8px 16px;
   text-decoration: none;
-  color: #58a6ff;
+  color: #e0e0e0;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-bottom: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  background-color: #262626;
+  color: #fff;
 }
 
 nav .current {
+  background-color: #2d2d2d;
+  border-color: #a67c1e;
+  border-bottom: 1px solid #2d2d2d;
   font-weight: bold;
-  color: #e0e0e0;
-  border-bottom: 2px solid #a67c1e;
-  padding-bottom: 2px;
   pointer-events: none;
 }
+
+```
 
 /* --- COVID NOTICE --- */
 .covid-notice {
