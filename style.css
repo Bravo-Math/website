@@ -116,8 +116,9 @@ nav {
   display: flex;
   gap: 4px;
   align-items: flex-end;
-  border-bottom: 2px solid #a67c1e;
+  border-bottom: 2px solid #a67c1e; /* Thin yellow line spanning across */
   padding-bottom: 0;
+  width: 100%;
 }
 
 nav a, nav .current {
@@ -139,14 +140,11 @@ nav a:hover {
 
 nav .current {
   background-color: #2d2d2d;
-  border-top: 2px solid #a67c1e;
-  border-left: 1px solid #a67c1e;
-  border-right: 1px solid #a67c1e;
-  border-bottom: none;
+  border-color: #333;
+  border-bottom: 2px solid #2d2d2d; /* Masks out the yellow line directly under the active tab */
   position: relative;
   z-index: 2;
   margin-bottom: -2px;
-  padding-bottom: 9px;
   font-weight: bold;
   pointer-events: none;
 }
