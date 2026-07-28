@@ -80,7 +80,7 @@ a:hover, a em:hover {
 /* --- HEADER & NAVIGATION --- */
 header {
   width: 100%;
-  border-top: 1px solid #333333;
+  border-top: 1px solid var(--border-color);
   border-bottom: 1px solid #333333;
 }
 
