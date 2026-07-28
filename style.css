@@ -90,28 +90,6 @@ logo a {
   margin-left: 10px;
 }
 
-Here is the exact code block to find in your `style.css` file and what to replace it with to turn your navigation links into clean, browser-like tabs.
-
-### 1. Find this existing block in your `style.css`:
-
-*(Look for your current `nav` or `nav a` styling rules)*
-
-```css
-nav {
-  /* your existing nav rules */
-}
-
-nav a {
-  /* your existing nav link rules */
-}
-
-```
-
-### 2. Replace it with this complete set of tab styles:
-
-```css
-```css
-```css
 nav {
   display: flex;
   gap: 4px;
