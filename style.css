@@ -141,8 +141,8 @@ nav a:hover {
 
 nav .current {
   background-color: #2d2d2d;
-  border: 2px solid #a67c1e;
-  border-bottom: 2px solid #2d2d2d;
+  border: 1px solid #a67c1e;
+  border-bottom: 1px solid #2d2d2d;
   font-weight: bold;
   pointer-events: none;
 }
