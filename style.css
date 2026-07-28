@@ -467,7 +467,7 @@ footer {
 footer div {
   display: flex;
   justify-content: space-between;
-  color: #e0e0e0;
+  color: var(--text-color);
 }
 
 footer div:first-child a {
