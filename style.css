@@ -4,12 +4,12 @@
  * Site-wide color palette.
  */
 :root {
-    --background-color: var(--background-color);
-    --text-color: var(--text-color);
-    --link-color: var(--link-color);
-    --accent-color: var(--accent-color);
-    --border-color: var(--border-color);
-    --hover-background-color: var(--hover-background-color);
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #58a6ff;
+    --accent-color: #a67c1e;
+    --border-color: #333333;
+    --hover-background-color: #222222;
 }
 
 
@@ -107,7 +107,7 @@ nav {
   display: flex;
   gap: 4px;
   align-items: flex-end;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--border-color);
   padding: 0;
   margin: 0;
   width: 100%;
@@ -118,7 +118,7 @@ nav a, nav .current {
   text-decoration: none;
   color: var(--text-color);
   background-color: #1a1a1a;
-  border: 1px solid #333;
+  border: 1px solid var(--border-color);
   border-bottom: none;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
