@@ -1,7 +1,0 @@
-Learning 101		Green
-Integers			Yellow
-Fractions			Blue
-Algebra				Red
-Statistics			Purple
-Calculus			aqua
-School Math			White
