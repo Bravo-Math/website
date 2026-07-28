@@ -525,7 +525,7 @@ footer div:last-child a {
   footer div:first-child,
   footer div:last-child {
     flex-direction: row;
-    color: #e0e0e0;
+    color: var(--text-color);
   }
 
   footer a {
