@@ -360,7 +360,7 @@ th, td {
   width: 100%;
   padding: 0;
   text-align: left;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid var(--border-color);
   background-color: transparent;
   transition: .2s;
 }
