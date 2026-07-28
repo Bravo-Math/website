@@ -73,7 +73,7 @@ a, a em {
 }
 
 a:hover, a em:hover {
-  color: #58a6ff;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
