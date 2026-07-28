@@ -126,7 +126,7 @@ nav a, nav .current {
 }
 
 nav a:hover {
-  background-color: #262626;
+  background-color: var(--hover-background-color);
   color: #fff;
 }
 
