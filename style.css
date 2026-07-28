@@ -272,7 +272,7 @@ main>.top, .resources_general, .resources_calculus, .research_main, .contact_mai
 }
 
 main>.middle, .resources_integer, .contact_main_b, .article.first {
-  border-color: #a67c1e;
+  border-color: var(--accent-color);
 }
 
 .resources_rational, .article.third {
