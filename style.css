@@ -241,7 +241,7 @@ section div.panel {
   transition: all 0.5s;
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid var(--border-color);
 }
 
 section div.panel p {
