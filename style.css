@@ -2,10 +2,6 @@
 
 /*
  * Site-wide color palette.
- *
- * Most colors on the website should come from these variables.
- * To change the site's appearance, edit the values below instead
- * of searching through the stylesheet for individual color codes.
  */
 :root {
     --background-color: #121212;
