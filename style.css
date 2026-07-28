@@ -141,8 +141,10 @@ nav a:hover {
 
 nav .current {
   background-color: #2d2d2d;
-  border: 1px solid #a67c1e;
-  border-bottom: 1px solid #2d2d2d;
+  border: 1px solid #a67c1e; /* Full 1px yellow box on all 4 sides */
+  position: relative;
+  z-index: 10;
+  margin-bottom: -1px; /* Overlaps container border cleanly so bottom line shows */
   font-weight: bold;
   pointer-events: none;
 }
