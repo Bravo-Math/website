@@ -232,7 +232,7 @@ section.open .toggler:after {
 
 section .toggler:hover,
 section .toggler:hover:after {
-  color: #a67c1e;
+  color: var(--accent-color);
 }
 
 section div.panel {
