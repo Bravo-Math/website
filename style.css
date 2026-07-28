@@ -664,7 +664,7 @@ footer div:last-child a {
   footer a {
     font-size: 11px;
     padding: 8px 0 0 0 !important;
-    color: #e0e0e0;
+    color: var(--text-color);
   }
 
   footer div:first-child,
