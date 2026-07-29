@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Asul:400,700&display=swap');
 
 /* Site-wide color palette.  */
+
 :root {
     --background-color: #121212;
     --text-color: #e0e0e0;
@@ -11,6 +12,7 @@
 }
 
 /* --- GLOBAL RESETS & TYPOGRAPHY --- */
+
 * {
   box-sizing: border-box;
   font-family: 'Asul', sans-serif;
@@ -37,6 +39,7 @@ img {
 }
 
 /* --- HEADINGS & TEXT STYLING --- */
+
 h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -72,6 +75,7 @@ a:hover, a em:hover {
 }
 
 /* --- HEADER & NAVIGATION --- */
+
 header {
   width: 100%;
   border-top: 1px solid var(--border-color);
@@ -133,7 +137,8 @@ nav .current {
   pointer-events: none;
 }
 
-/* --- HOME CONTAINER & ANIMATIONS --- */
+/* --- HOME & ANIMATIONS --- */
+
 .home_container {
   position: relative;
   display: flex;
@@ -199,7 +204,8 @@ nav .current {
   100% { transform: translateY(0px); opacity: 1; }
 }
 
-/* --- SECTIONS & TOGGLERS --- */
+/* --- COLLAPSIBLE SECTIONS --- */
+
 section .toggler {
   cursor: pointer;
   width: 100%;
@@ -243,7 +249,8 @@ section div.panel p {
   margin-top: 0;
 }
 
-/* --- ABOUT, RESOURCES & RESEARCH BLOCKS --- */
+/* --- CONTENT BOXES --- */
+
 main>.top,
 main>.middle,
 .contact_main,
@@ -285,6 +292,7 @@ th, td {
 }
 
 /* --- CONTACT ROWS --- */
+
 .contact_row {
   cursor: pointer;
   width: 100%;
@@ -315,6 +323,7 @@ th, td {
 }
 
 /* --- UTILITIES & MISC --- */
+
 .icon {
   height: 20px;
   padding-left: 6px;
@@ -365,6 +374,7 @@ h6 {
 }
 
 /* --- FOOTER --- */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -392,6 +402,7 @@ footer div:last-child a {
 }
 
 /* --- MEDIA QUERIES --- */
+
 @media screen and (max-width: 800px) {
   main>.top,
   main>.middle {
