@@ -505,8 +505,7 @@ footer div:last-child a {
   }
 
   .curriculum section.open .toggler {
-    padding-top: 0px;
-    padding-bottom: 12px;
+    padding: 0 0 12 px 0;
   }
 
   .curriculum section.open .panel {
