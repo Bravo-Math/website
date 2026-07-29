@@ -249,8 +249,7 @@ section div.panel p {
 main>.top,
 main>.middle,
 .contact_main,
-.curriculum,
-.covid-main {
+.curriculum {
   flex-grow: 1;
   margin-top: 40px;
   border: 8px solid;
