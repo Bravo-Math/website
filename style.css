@@ -410,12 +410,6 @@ ul ul {
   text-decoration: none; /* Prevents any underline on hover */
 }
 
-.photo_credit {
-  font-size: 9.5px;
-  font-weight: 400;
-  color: darkgray;
-}
-
 h6 {
   padding: 46px 0 0 64px;
   margin: 0;
