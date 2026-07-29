@@ -260,19 +260,19 @@ main>.middle,
   padding: 50px;
 }
 
-main>.top, .resources_general, .resources_calculus, .research_main, .contact_main, .curriculum, .covid-main {
+main>.top, .contact_main, .curriculum, .covid-main {
   border-color: var(--accent-color);
 }
 
-main>.middle, .resources_integer, .contact_main_b, .article.first {
+main>.middle, .article.first {
   border-color: var(--accent-color);
 }
 
-.resources_rational, .article.third {
+.article.third {
   border-color: var(--link-color);
 }
 
-.resources_algebra, .article.second {
+.article.second {
   border-color: #FF5555;
 }
 
@@ -466,7 +466,6 @@ footer div:last-child a {
   }
 
   .contact_main,
-  .research_main,
   .curriculum,
   .covid-main {
     padding: 40px;
