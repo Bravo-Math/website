@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Asul:400,700&display=swap');
 
-/*
- * Site-wide color palette.
- */
+/* Site-wide color palette.  */
 :root {
     --background-color: #121212;
     --text-color: #e0e0e0;
@@ -11,7 +9,6 @@
     --border-color: #333333;
     --hover-background-color: #222222;
 }
-
 
 /* --- GLOBAL RESETS & TYPOGRAPHY --- */
 * {
@@ -282,8 +279,7 @@ main>.middle {
 }
 
 main>.top p:last-of-type,
-.research_main p:last-of-type,
-.article .panel p:last-of-type {
+.research_main p:last-of-type {
   margin-bottom: 0;
 }
 
