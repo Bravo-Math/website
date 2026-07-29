@@ -291,10 +291,6 @@ main:last-of-type {
   margin-bottom: 40px;
 }
 
-.about_bottom_spacer {
-  display: none;
-}
-
 /* --- ARTICLES & TABLES --- */
 .article {
   border: 8px solid;
