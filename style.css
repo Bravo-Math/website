@@ -265,14 +265,6 @@ main>.middle {
   border-color: var(--accent-color);
 }
 
-.article.third {
-  border-color: var(--link-color);
-}
-
-.article.second {
-  border-color: #FF5555;
-}
-
 main>.top,
 main>.middle {
   padding: 90px;
