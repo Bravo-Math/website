@@ -256,7 +256,7 @@ main>.middle,
   padding: 50px;
 }
 
-main>.top, .contact_main, .curriculum, .covid-main {
+main>.top, .contact_main, .curriculum, {
   border-color: var(--accent-color);
 }
 
@@ -374,16 +374,6 @@ h6 {
   font-size: 22px;
 }
 
-.covid-main {
-  color: #FF5555;
-}
-
-.covid-main h1 {
-  padding-bottom: 20px;
-  margin-top: 0;
-  padding-top: 0;
-}
-
 /* --- FOOTER --- */
 footer {
   display: flex;
@@ -424,8 +414,7 @@ footer div:last-child a {
   }
 
   .contact_main,
-  .curriculum,
-  .covid-main {
+  .curriculum {
     padding: 40px;
     margin-top: 20px;
   }
@@ -503,8 +492,7 @@ footer div:last-child a {
   main>.top,
   main>.middle,
   .contact_main,
-  .curriculum,
-  .covid-main {
+  .curriculum {
     border: none;
     border-bottom: none;
     padding: 12px 0 30px 0;
