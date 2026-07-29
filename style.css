@@ -472,10 +472,6 @@ footer div:last-child a {
     justify-content: space-around;
   }
 
-  .covid-notice {
-    text-align: center;
-  }
-
   nav a {
     white-space: nowrap;
     padding: 0;
