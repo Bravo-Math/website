@@ -291,22 +291,7 @@ main:last-of-type {
   margin-bottom: 40px;
 }
 
-/* --- ARTICLES & TABLES --- */
-.article .toggler {
-  border-bottom: none;
-}
-
-.article section.open .toggler {
-  padding-top: 90px;
-}
-
-.article section.open .panel {
-  margin-bottom: 90px;
-}
-
-.article .panel {
-  border: none;
-}
+/* --- OLD ARTICLES & TABLES --- */
 
 .image_container_with_caption {
   display: inline-flex;
