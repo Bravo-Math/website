@@ -251,14 +251,7 @@ section div.panel p {
 /* --- ABOUT, RESOURCES & RESEARCH BLOCKS --- */
 main>.top,
 main>.middle,
-.resources_general,
-.resources_integer,
-.resources_rational,
-.resources_algebra,
-.resources_calculus,
-.research_main,
 .contact_main,
-.contact_main_b,
 .curriculum,
 .covid-main {
   flex-grow: 1;
