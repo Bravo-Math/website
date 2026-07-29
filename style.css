@@ -453,10 +453,9 @@ footer div:last-child a {
     margin-top: 20px;
   }
 
-  .article section.open .toggler,
   .curriculum section.open .toggler {
     padding-top: 40px;
-  }
+    }
 
   .article section.open .panel,
   .curriculum section.open .panel {
