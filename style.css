@@ -347,8 +347,7 @@ th, td {
 }
 
 /* --- CONTACT ROWS --- */
-.contact_row,
-.contact_row_b {
+.contact_row {
   cursor: pointer;
   width: 100%;
   padding: 0;
@@ -358,8 +357,7 @@ th, td {
   transition: .2s;
 }
 
-.contact_row p,
-.contact_row_b p {
+.contact_row p {
   display: inline-block;
   width: calc(100% - 40px);
   padding: 14px 0;
@@ -367,15 +365,13 @@ th, td {
   transition: ease .2s;
 }
 
-.contact_row .icon,
-.contact_row_b .icon {
+.contact_row .icon {
   display: inline-block;
   float: right;
   margin-top: 14px;
 }
 
-.contact_row p:hover,
-.contact_row_b p:hover {
+.contact_row p:hover {
   padding-left: 10px;
   color: var(--link-color);
 }
