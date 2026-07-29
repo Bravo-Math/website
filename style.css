@@ -251,6 +251,13 @@ section div.panel p {
 
 /* --- CONTENT BOXES --- */
 
+.box {
+    flex-grow: 1;
+    margin-top: 40px;
+    border: 8px solid var(--accent-color);
+    padding: 90px;
+    }
+
 main>.top,
 main>.middle,
 .contact_main,
