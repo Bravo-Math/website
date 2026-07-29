@@ -292,12 +292,6 @@ main:last-of-type {
 }
 
 /* --- ARTICLES & TABLES --- */
-.article {
-  border: 8px solid;
-  padding: 10px 90px;
-  margin-top: 40px;
-}
-
 .article .toggler {
   border-bottom: none;
 }
@@ -486,11 +480,6 @@ footer div:last-child a {
     margin-top: 20px;
   }
 
-  .article {
-    padding: 10px 40px;
-    margin-top: 20px;
-  }
-
   .article section.open .toggler,
   .curriculum section.open .toggler {
     padding-top: 40px;
@@ -619,19 +608,6 @@ footer div:last-child a {
 
   .curriculum h1 {
     font-size: 18px;
-  }
-
-  .article {
-    border: none;
-    padding: 0;
-    margin: 0;
-    border-top: 4px double;
-    text-align: justify;
-  }
-
-  .article:last-of-type {
-    border-bottom: 4px double;
-    margin-bottom: 40px;
   }
 
   .apply_now_container {
