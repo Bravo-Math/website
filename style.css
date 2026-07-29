@@ -509,7 +509,7 @@ footer div:last-child a {
   }
 
   .curriculum section.open .panel {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .curriculum h1 {
