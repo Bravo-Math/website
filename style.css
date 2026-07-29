@@ -261,7 +261,7 @@ main>.top, .contact_main, .curriculum, .covid-main {
   border-color: var(--accent-color);
 }
 
-main>.middle, .article.first {
+main>.middle {
   border-color: var(--accent-color);
 }
 
