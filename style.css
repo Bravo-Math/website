@@ -90,6 +90,7 @@ logo a {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .shapes {
