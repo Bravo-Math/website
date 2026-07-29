@@ -256,14 +256,6 @@ main>.middle,
   padding: 50px;
 }
 
-main>.top, .contact_main, .curriculum {
-  border-color: var(--accent-color);
-}
-
-main>.middle {
-  border-color: var(--accent-color);
-}
-
 main>.top,
 main>.middle {
   padding: 90px;
