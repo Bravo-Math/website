@@ -252,7 +252,7 @@ main>.middle,
 .curriculum {
   flex-grow: 1;
   margin-top: 40px;
-  border: 8px solid;
+  border: 8px solid var(--accent-color);
   padding: 50px;
 }
 
