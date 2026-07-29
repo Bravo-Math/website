@@ -281,19 +281,6 @@ main:last-of-type {
 
 /* --- OLD ARTICLES & TABLES --- */
 
-.image_container_with_caption {
-  display: inline-flex;
-  margin-bottom: 16px;
-}
-
-.image_container_with_caption .image_caption {
-  padding-left: 20px;
-  min-width: 280px;
-  padding-top: 20px;
-  margin-bottom: 21px;
-  background-color: var(--background-color);
-}
-
 table {
   margin-bottom: 1em;
   width: 100%;
@@ -468,19 +455,6 @@ footer div:last-child a {
   footer a {
     padding: 10px 0 0 0 !important;
     color: #e0e0e0;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .image_container_with_caption {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .image_container_with_caption .image_caption {
-    padding-left: 0;
-    padding-top: 10px;
-    background-color: transparent;
   }
 }
 
