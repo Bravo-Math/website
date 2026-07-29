@@ -457,10 +457,9 @@ footer div:last-child a {
     padding-top: 40px;
     }
 
-  .article section.open .panel,
   .curriculum section.open .panel {
     margin-bottom: 40px;
-  }
+    }
 
   footer {
     flex-direction: column-reverse;
