@@ -428,6 +428,7 @@ footer div:last-child a {
 }
 
 @media screen and (max-width: 550px) {
+    
   body {
     padding: 15px;
     overflow-x: hidden;
@@ -472,19 +473,12 @@ footer div:last-child a {
   }
 
   .box,
-  main>.top,
-  main>.middle,
   .contact_main {
     border: none;
     border-bottom: none;
     padding: 12px 0 30px 0;
     margin-top: 40px;
     text-align: justify;
-  }
-
-  main>.middle {
-    border-bottom: none;
-    margin-top: 30px;
   }
 
   .apply_now_container {
