@@ -260,8 +260,7 @@ section div.panel p {
 
 main>.top,
 main>.middle,
-.contact_main,
-.curriculum {
+.contact_main{
   flex-grow: 1;
   margin-top: 40px;
   border: 8px solid var(--accent-color);
@@ -421,19 +420,10 @@ footer div:last-child a {
     margin-bottom: 20px;
   }
 
-  .contact_main,
-  .curriculum {
+  .contact_main {
     padding: 40px;
     margin-top: 20px;
   }
-
-  .curriculum section.open .toggler {
-    padding-top: 40px;
-    }
-
-  .curriculum section.open .panel {
-    margin-bottom: 40px;
-    }
 
   footer {
     flex-direction: column-reverse;
@@ -500,8 +490,7 @@ footer div:last-child a {
   .box,
   main>.top,
   main>.middle,
-  .contact_main,
-  .curriculum {
+  .contact_main {
     border: none;
     border-bottom: none;
     padding: 12px 0 30px 0;
@@ -512,27 +501,6 @@ footer div:last-child a {
   main>.middle {
     border-bottom: none;
     margin-top: 30px;
-  }
-
-  .curriculum {
-    margin: 40px 0 0 0;
-    padding: 0;
-  }
-
-  .curriculum .toggler {
-    padding: 0;
-  }
-
-  .curriculum section.open .toggler {
-    padding: 0 0 12px 0;
-  }
-
-  .curriculum section.open .panel {
-    margin-bottom: 0;
-  }
-
-  .curriculum h1 {
-    font-size: 18px;
   }
 
   .apply_now_container {
