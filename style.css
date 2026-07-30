@@ -138,7 +138,6 @@ nav .current {
   pointer-events: none;
 }
 
-/* ADD THIS ENTIRE BLOCK */
 nav .current::after {
   content: "";
   position: absolute;
@@ -275,24 +274,6 @@ section div.panel p {
 main:last-of-type {
   margin-bottom: 40px;
 }
-
-/* --- OLD ARTICLES & TABLES --- */
-
-table {
-  margin-bottom: 1em;
-  width: 100%;
-}
-
-table, th, td {
-  border: 1px solid var(--border-color);
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
-}
-
 
 /* --- CONTACT ROWS --- */
 
