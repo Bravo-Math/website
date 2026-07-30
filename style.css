@@ -310,7 +310,7 @@ th, td {
   color: var(--link-color);
   text-decoration: none;
   transition: padding-left .2s ease;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /* --- UTILITIES & MISC --- */
