@@ -106,7 +106,7 @@ nav {
   display: flex;
   gap: 7px;
   align-items: flex-end;
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */         /*temporarily commented out 2026-07-30*/
   padding: 0;
   margin: 0;
   width: 100%;
