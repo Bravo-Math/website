@@ -302,7 +302,7 @@ th, td {
 
 .contact_row .icon {
   display: inline-block;
-  float: right;
+  float: left;
   margin-top: 14px;
   height: 36px;
 }
