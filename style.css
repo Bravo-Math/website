@@ -284,7 +284,7 @@ th, td {
 
 .contact_row {
     display: flex;              /* Put the icon and text side-by-side. */
-    align-items: flex-start;    /* Align the icon with the first line of text. */
+    align-items: center;        
     width: 100%;                /* Make the row fill the available width. */
     cursor: pointer;            /* Show the hand cursor because the whole row is clickable. */
     border-bottom: 1px solid var(--border-color); /* Separator between rows. */
@@ -295,7 +295,7 @@ th, td {
     flex: 1;                    /* Let the text fill the remaining horizontal space. */
     margin: 0;                  /* Remove the browser's default paragraph margin. */
     padding: 20px 0;            /* Add vertical breathing room for easier clicking. */
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -303,7 +303,7 @@ th, td {
     flex: 0 0 48px;             /* Reserve a fixed 48px-wide column for the icon. */
     height: 35px;               /* Display the icon at 35px tall. */
     margin-top: 2px;            /* Fine-tune the alignment with the first line of text. */
-    margin-right: 12px;         /* Space between the icon and the text. */
+    margin-right: 16px;         /* Space between the icon and the text. */
     object-fit: contain;        /* Prevent the image from stretching. */
 }
 
