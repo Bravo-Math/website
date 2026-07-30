@@ -265,11 +265,6 @@ section div.panel p {
   padding: 50px;
 }
 
-main>.top,
-main>.middle {
-  padding: 90px;
-}
-
 main>.top p:last-of-type {
   margin-bottom: 0;
 }
