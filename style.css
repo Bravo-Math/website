@@ -295,6 +295,7 @@ th, td {
     flex: 1;                    /* Let the text fill the remaining horizontal space. */
     margin: 0;                  /* Remove the browser's default paragraph margin. */
     padding: 20px 0;            /* Add vertical breathing room for easier clicking. */
+    font-size: 1.3rem;
 }
 
 .contact_row .icon {
@@ -310,7 +311,6 @@ th, td {
   color: var(--link-color);
   text-decoration: none;
   transition: padding-left .2s ease;
-  font-size: 1.4rem;
 }
 
 /* --- UTILITIES & MISC --- */
