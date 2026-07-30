@@ -107,7 +107,6 @@ nav {
   gap: 7px;
   align-items: flex-end;
   border-bottom: 1px solid var(--accent-color);
-  overflow: hidden;  
   padding: 0;
   margin: 0;
   width: 100%;
@@ -142,8 +141,8 @@ nav .current {
 nav .current::after {
   content: "";
   position: absolute;
-  left: -1px;
-  right: -1px;
+  left: 0;
+  right: 0;
   bottom: -1px;
   height: 1px;
   background: var(--background-color);                 /* Paint over the gray nav border */
