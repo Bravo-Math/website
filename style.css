@@ -279,6 +279,7 @@ th, td {
   text-align: left;
 }
 
+
 /* --- CONTACT ROWS --- */
 
 .contact_row {
@@ -293,7 +294,7 @@ th, td {
 
 .contact_row p {
   display: inline-block;
-  width: calc(100% - 40px);
+  width: calc(100% - 60px);
   padding: 14px 0;
   margin: 0;
   transition: ease .2s;
@@ -303,7 +304,7 @@ th, td {
   display: inline-block;
   float: right;
   margin-top: 14px;
-  height: 35px;
+  height: 36px;
 }
 
 .contact_row p:hover {
