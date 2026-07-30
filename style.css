@@ -258,13 +258,6 @@ section div.panel p {
     padding: 90px;
     }
 
-.contact_main{
-  flex-grow: 1;
-  margin-top: 40px;
-  border: 8px solid var(--accent-color);
-  padding: 50px;
-}
-
 main:last-of-type {
   margin-bottom: 40px;
 }
@@ -404,11 +397,6 @@ footer div:last-child a {
     margin-bottom: 20px;
   }
 
-  .contact_main {
-    padding: 40px;
-    margin-top: 20px;
-  }
-
   footer {
     flex-direction: column-reverse;
     padding: 0 0 10px 0;
@@ -472,8 +460,7 @@ footer div:last-child a {
     display: none;
   }
 
-  .box,
-  .contact_main {
+  .box {
     border: none;
     border-bottom: none;
     padding: 12px 0 30px 0;
