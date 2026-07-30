@@ -118,7 +118,7 @@ nav a, nav .current {
   color: var(--text-color);
   background-color: var(--background-color);
   border: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--hover-background-color);
+  border-bottom: none;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   font-size: 1rem;
@@ -130,6 +130,7 @@ nav a:hover {
 }
 
 nav .current {
+  position: relative;
   background-color: var(--hover-background-color);
   border: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--hover-background-color);
