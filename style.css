@@ -289,6 +289,7 @@ th, td {
     cursor: pointer;            /* Show the hand cursor because the whole row is clickable. */
     border-bottom: 1px solid var(--border-color); /* Separator between rows. */
     transition: .2s;            /* Smooth hover animation. */
+    text-decoration: none;
 }
 
 .contact_row p {
@@ -296,7 +297,6 @@ th, td {
     margin: 0;                  /* Remove the browser's default paragraph margin. */
     padding: 20px 0;            /* Add vertical breathing room for easier clicking. */
     font-size: 1.25rem;
-    text-decoration: none;
 }
 
 .contact_row .icon {
