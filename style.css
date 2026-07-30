@@ -283,28 +283,26 @@ th, td {
 /* --- CONTACT ROWS --- */
 
 .contact_row {
-  cursor: pointer;
-  width: 100%;
-  padding: 0;
-  text-align: left;
-  border-bottom: 1px solid var(--border-color);
-  background-color: transparent;
-  transition: .2s;
+    display: flex;              /* Put the icon and text side-by-side. */
+    align-items: flex-start;    /* Align the icon with the first line of text. */
+    width: 100%;                /* Make the row fill the available width. */
+    cursor: pointer;            /* Show the hand cursor because the whole row is clickable. */
+    border-bottom: 1px solid var(--border-color); /* Separator between rows. */
+    transition: .2s;            /* Smooth hover animation. */
 }
 
 .contact_row p {
-  display: inline-block;
-  width: calc(100% - 60px);
-  padding: 14px 0;
-  margin: 0;
-  transition: ease .2s;
+    flex: 1;                    /* Let the text fill the remaining horizontal space. */
+    margin: 0;                  /* Remove the browser's default paragraph margin. */
+    padding: 14px 0;            /* Add vertical breathing room for easier clicking. */
 }
 
 .contact_row .icon {
-  display: inline-block;
-  float: left;
-  margin-top: 14px;
-  height: 36px;
+    flex: 0 0 48px;             /* Reserve a fixed 48px-wide column for the icon. */
+    height: 35px;               /* Display the icon at 35px tall. */
+    margin-top: 2px;            /* Fine-tune the alignment with the first line of text. */
+    margin-right: 12px;         /* Space between the icon and the text. */
+    object-fit: contain;        /* Prevent the image from stretching. */
 }
 
 .contact_row p:hover {
