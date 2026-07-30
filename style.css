@@ -78,7 +78,7 @@ a:hover, a em:hover {
 
 header {
   width: 100%;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--accent-color);
   /* border-bottom: 1px solid var(--border-color);*/     /*Temporarily commented out 2026-07-30*/
 }
 
