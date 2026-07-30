@@ -307,10 +307,14 @@ th, td {
     object-fit: contain;        /* Prevent the image from stretching. */
 }
 
+.contact_row:hover {
+    padding-left: 10px;                     /* Slide the entire row so the icon and text move together. */
+    background-color: rgba(255,255,255,.04);/* Give the row a subtle highlight while hovering. */
+    transition: padding-left .2s ease;
+}
+
 .contact_row:hover p {
-  padding-left: 10px;
   color: var(--link-color);
-  transition: padding-left .2s ease;
 }
 
 /* --- UTILITIES & MISC --- */
