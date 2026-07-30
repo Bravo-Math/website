@@ -303,6 +303,7 @@ th, td {
   display: inline-block;
   float: right;
   margin-top: 14px;
+  height: 32px;
 }
 
 .contact_row p:hover {
