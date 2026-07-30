@@ -131,10 +131,10 @@ nav a:hover {
 
 nav .current {
   position: relative;
-  background-color: var(--hover-background-color);
+  /* background-color: var(--hover-background-color); */  /*temporarily commented out for 2026-07-30*/
   border: 1px solid var(--accent-color);
   border-bottom: none /*1px solid var(--hover-background-color)*/; 
-  font-weight: bold;
+  /* font-weight: bold; */ /*temporarily commented out for 2026-07-30*/
   pointer-events: none;
 }
 
