@@ -265,10 +265,6 @@ section div.panel p {
   padding: 50px;
 }
 
-main>.top p:last-of-type {
-  margin-bottom: 0;
-}
-
 main:last-of-type {
   margin-bottom: 40px;
 }
@@ -403,11 +399,6 @@ footer div:last-child a {
 /* --- MEDIA QUERIES --- */
 
 @media screen and (max-width: 800px) {
-  main>.top,
-  main>.middle {
-    padding: 40px;
-    margin-top: 20px;
-  }
 
   main:last-of-type {
     margin-bottom: 20px;
