@@ -307,7 +307,7 @@ th, td {
     object-fit: contain;        /* Prevent the image from stretching. */
 }
 
-.contact_row p:hover {
+.contact_row:hover p {
   padding-left: 10px;
   color: var(--link-color);
   transition: padding-left .2s ease;
