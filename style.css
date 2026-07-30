@@ -148,6 +148,8 @@ nav .current::after {
   height: 1px;
   background: var(--background-color);                 /* Paint over the gray nav border */
   z-index: 3;
+}
+
 
 /* --- HOME & ANIMATIONS --- */
 
