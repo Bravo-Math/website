@@ -432,6 +432,11 @@ footer div:last-child a {
     border-bottom: none;           /* ADD: Remove the desktop horizontal line. */
   }
 
+  nav a,
+  nav .current {
+    padding: 10px 16px;            /* Reduce the height of the mobile navigation items. */
+  }
+    
   nav section div.panel {
     right: 15px;
     margin-top: 8px;
