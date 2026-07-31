@@ -425,15 +425,8 @@ footer div:last-child a {
   }
 
   nav {
-    justify-content: space-around;
+    justify-content: flex-start;
   }
-
-/* TEMPORARILY COMMENTED OUT TO SEE IF IF TICXES TAB HEIGHT FOR TABLETS */
-    
-/*  nav a {
-    white-space: nowrap;
-    padding: 0;
-  } */ 
 
   nav section div.panel {
     right: 15px;
