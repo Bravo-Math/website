@@ -424,10 +424,6 @@ footer div:last-child a {
     overflow-x: hidden;
   }
 
-  logo {
-    text-align: left;
-  }
-
   nav {
     justify-content: space-around;
   }
