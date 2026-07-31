@@ -425,7 +425,11 @@ footer div:last-child a {
   }
 
   nav {
-    justify-content: flex-start;
+    justify-content: flex-start;   /* KEEP */
+    flex-direction: column;        /* ADD: Stack the tabs vertically. */
+    align-items: stretch;          /* ADD: Make the tabs fill the available width. */
+    gap: 7px;                      /* KEEP the same spacing between tabs. */
+    border-bottom: none;           /* ADD: Remove the desktop horizontal line. */
   }
 
   nav section div.panel {
