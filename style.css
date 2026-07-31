@@ -428,10 +428,12 @@ footer div:last-child a {
     justify-content: space-around;
   }
 
-  nav a {
+/* TEMPORARILY COMMENTED OUT TO SEE IF IF TICXES TAB HEIGHT FOR TABLETS */
+    
+/*  nav a {
     white-space: nowrap;
     padding: 0;
-  }
+  } */ 
 
   nav section div.panel {
     right: 15px;
