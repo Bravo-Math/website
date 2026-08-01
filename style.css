@@ -425,7 +425,7 @@ footer div:last-child a {
   }
 
 /* Mobile only: thicker separator below the logo */
-header {
+logo {
   border-bottom: 3px solid var(--accent-color);
 }
     
