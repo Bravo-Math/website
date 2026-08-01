@@ -438,10 +438,14 @@ logo {
     border-bottom: none;           /* ADD: Remove the desktop horizontal line. */
   }
 
-  nav a,
-  nav .current {
-    padding: 10px 16px;            /* Reduce the height of the mobile navigation items. */
-  }
+nav a,
+nav .current {
+  padding: 10px 16px;                 /* KEEP */
+  border: none;                       /* ADD: Remove the desktop tab border. */
+  border-radius: 0;                   /* ADD: Remove the desktop tab shape. */
+  width: 100%;                        /* ADD: Full-width rows. */
+  box-sizing: border-box;             /* ADD: Include padding in the width. */
+}
 
   nav .current {
     background-color: var(--accent-color);
