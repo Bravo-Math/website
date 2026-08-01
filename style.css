@@ -441,6 +441,11 @@ logo {
   nav .current {
     padding: 10px 16px;            /* Reduce the height of the mobile navigation items. */
   }
+
+  nav .current {
+    background-color: var(--accent-color);
+    color: #000000;
+  }
     
   nav section div.panel {
     right: 15px;
