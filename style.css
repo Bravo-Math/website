@@ -95,7 +95,7 @@ header {
   /* border-bottom: 1px solid var(--border-color);*/     /*Temporarily commented out 2026-07-30*/
 }
 
-logo {
+.logo {
   display: block;
   width: 100%;
   padding: 12px 0;
@@ -103,7 +103,7 @@ logo {
   white-space: nowrap;
 }
 
-logo a {
+.logo a {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-color);
@@ -440,7 +440,7 @@ header {
   border-top: none;
 }
 
-logo {
+.logo {
   padding-bottom: 16px;
   border-bottom: 2px solid var(--accent-color);
 }
