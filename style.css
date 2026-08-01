@@ -238,7 +238,7 @@ section .toggler {
   padding: 14px 0;
   text-align: left;
   transition: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--link-color);
   font-weight: 700;
 }
