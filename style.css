@@ -428,14 +428,7 @@ logo {
   border-bottom: 2px solid var(--accent-color);
 }
 
-    
-body {
-    padding: 15px;
-    overflow-x: hidden;
-  }
-
-    
-  nav {
+nav {
     justify-content: flex-start;   /* KEEP */
     flex-direction: column;        /* ADD: Stack the tabs vertically. */
     align-items: stretch;          /* ADD: Make the tabs fill the available width. */
@@ -452,18 +445,23 @@ nav .current {
   box-sizing: border-box;             /* ADD: Include padding in the width. */
 }
 
-  nav .current {
+nav .current {
     background-color: var(--accent-color);
     color: var(--background-color);
   }
     
-  nav section div.panel {
+nav section div.panel {
     right: 15px;
     margin-top: 8px;
     padding-right: 12px;
   }
 
-  .home_container img {
+body {
+    padding: 15px;
+    overflow-x: hidden;
+  }
+
+.home_container img {
     display: none;
   }
 
