@@ -64,9 +64,14 @@ h3 {
   color: var(--text-color);
 }
 
-p, li {
+p {
   font-size: 1.05rem;
   margin-bottom: 1.2rem;
+}
+
+li {
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
 }
 
 b {
