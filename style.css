@@ -424,6 +424,11 @@ footer div:last-child a {
     overflow-x: hidden;
   }
 
+/* Mobile only: thicker separator below the logo */
+header {
+  border-bottom: 3px solid var(--accent-color);
+}
+    
   nav {
     justify-content: flex-start;   /* KEEP */
     flex-direction: column;        /* ADD: Stack the tabs vertically. */
