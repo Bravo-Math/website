@@ -429,6 +429,7 @@ logo {
 }
 
 nav {
+    margin-top: 16px; 
     justify-content: flex-start;   /* KEEP */
     flex-direction: column;        /* ADD: Stack the tabs vertically. */
     align-items: stretch;          /* ADD: Make the tabs fill the available width. */
