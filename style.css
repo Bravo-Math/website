@@ -462,6 +462,15 @@ nav a:last-child,
 nav .current:last-child {
   margin-bottom: 20px;   /* ADD: Extra space after the final navigation item only. */
 }
+
+/* Mobile only: show a subtle chevron on navigation links. */
+nav a::after {
+  content: "›";                 /* ADD: Right-pointing chevron. */
+  float: right;                 /* ADD: Push it to the right edge. */
+  color: var(--background-color);   /* ADD: Keep it subtle. */
+  font-size: 1.2rem;            /* ADD: Slightly larger than the text. */
+  font-weight: normal;          /* ADD: Prevent it from looking heavy. */
+}
     
 body {
     padding: 15px;
