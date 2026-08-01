@@ -418,18 +418,22 @@ footer div:last-child a {
 }
 
 @media screen and (max-width: 550px) {
+
+header {
+  border-top: none;
+}
+
+logo {
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
     
-  body {
+body {
     padding: 15px;
     overflow-x: hidden;
   }
 
-/* Mobile only: thicker separator below the logo */
-logo {
-  padding-bottom: 16px;
-  border-top: none;
-  border-bottom: 2px solid var(--accent-color);
-}
     
   nav {
     justify-content: flex-start;   /* KEEP */
