@@ -433,14 +433,15 @@ nav {
     justify-content: flex-start;   /* KEEP */
     flex-direction: column;        /* ADD: Stack the tabs vertically. */
     align-items: stretch;          /* ADD: Make the tabs fill the available width. */
-    gap: 10px;                     
-    border-bottom: none;           /* ADD: Remove the desktop horizontal line. */
+    gap: 0;                     
+    border-bottom: none;           
   }
 
 nav a,
 nav .current {
   padding: 10px 16px;                 /* KEEP */
   border: none;                       /* ADD: Remove the desktop tab border. */
+  border-bottom: 1px solid var(--border-color); /* ADD */
   border-radius: 0;                   /* ADD: Remove the desktop tab shape. */
   width: 100%;                        /* ADD: Full-width rows. */
   box-sizing: border-box;             /* ADD: Include padding in the width. */
