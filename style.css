@@ -353,6 +353,10 @@ ul ul {
   margin-top: auto;
 }
 
+ul ul li {
+  margin-bottom: 0.4rem;   /* Slightly tighter spacing for nested lists. */
+}
+
 .apply_now_container {
   margin-top: 2em;
 }
