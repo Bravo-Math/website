@@ -434,7 +434,7 @@ logo {
     justify-content: flex-start;   /* KEEP */
     flex-direction: column;        /* ADD: Stack the tabs vertically. */
     align-items: stretch;          /* ADD: Make the tabs fill the available width. */
-    gap: 7px;                      /* KEEP the same spacing between tabs. */
+    gap: 10px;                     
     border-bottom: none;           /* ADD: Remove the desktop horizontal line. */
   }
 
@@ -449,7 +449,7 @@ nav .current {
 
   nav .current {
     background-color: var(--accent-color);
-    color: #000000;
+    color: var(--background-color);
   }
     
   nav section div.panel {
