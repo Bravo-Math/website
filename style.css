@@ -42,6 +42,7 @@ img {
 
 h1 {
   font-size: 2rem;
+  margin-top: 32px;
   margin-bottom: 1.5rem;
   font-weight: 700;
   color: var(--text-color);
@@ -471,7 +472,11 @@ nav a::after {
   font-size: 1.2rem;            /* ADD: Slightly larger than the text. */
   font-weight: normal;          /* ADD: Prevent it from looking heavy. */
 }
-    
+
+h1 {
+  margin-top: 16px;
+}
+
 body {
     padding: 15px;
     overflow-x: hidden;
