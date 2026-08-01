@@ -467,7 +467,7 @@ nav .current:last-child {
 nav a::after {
   content: "›";                 /* ADD: Right-pointing chevron. */
   float: right;                 /* ADD: Push it to the right edge. */
-  color: var(--background-color);   /* ADD: Keep it subtle. */
+  color: var(--text-color);   /* ADD: Keep it subtle. */
   font-size: 1.2rem;            /* ADD: Slightly larger than the text. */
   font-weight: normal;          /* ADD: Prevent it from looking heavy. */
 }
