@@ -433,7 +433,6 @@ nav {
     justify-content: flex-start;   /* KEEP */
     flex-direction: column;        /* ADD: Stack the tabs vertically. */
     align-items: stretch;          /* ADD: Make the tabs fill the available width. */
-    padding-bottom: 40px
     gap: 0;                     
     border-bottom: none;           
   }
@@ -459,6 +458,11 @@ nav section div.panel {
     padding-right: 12px;
   }
 
+nav a:last-child,
+nav .current:last-child {
+  margin-bottom: 20px;   /* ADD: Extra space after the final navigation item only. */
+}
+    
 body {
     padding: 15px;
     overflow-x: hidden;
