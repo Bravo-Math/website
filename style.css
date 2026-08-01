@@ -439,7 +439,7 @@ nav {
 
 nav a,
 nav .current {
-  padding: 10px 16px;                 /* KEEP */
+  padding: 14px 16px;                 /* KEEP */
   border: none;                       /* ADD: Remove the desktop tab border. */
   border-bottom: 1px solid var(--border-color); /* ADD */
   border-radius: 0;                   /* ADD: Remove the desktop tab shape. */
