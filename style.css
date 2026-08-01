@@ -426,8 +426,8 @@ footer div:last-child a {
 
 /* Mobile only: thicker separator below the logo */
 logo {
-  padding-bottom: 16px;
-  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent-color);
 }
     
   nav {
