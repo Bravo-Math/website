@@ -290,6 +290,7 @@ section div.panel p {
     margin-top: 40px;
     border: 4px solid var(--accent-color);
     padding: 90px;
+    margin-bottom: 1em;
     }
 
 main:last-of-type {
