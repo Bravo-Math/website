@@ -1,0 +1,40 @@
+name: Build Counting to Calculus
+
+on:
+  push:
+    paths:
+      - "c2c-template.html"
+      - "c2c-curriculum/**"
+      - "build-c2c.py"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build c2c.html
+        run: python build-c2c.py
+
+      - name: Commit generated c2c.html
+        run: |
+          if git diff --quiet c2c.html; then
+            echo "No changes."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add c2c.html
+            git commit -m "Automatically rebuild c2c.html"
+            git push
+          fi
