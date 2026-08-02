@@ -249,7 +249,7 @@ section .toggler {
     font-weight: bold;
     border-bottom: 1px solid var(--accent-color);
     padding-bottom: 0.6em;
-    margin-bottom: 0.6em;
+    margin-bottom: 1em;
 }
 
 section .toggler:after {
