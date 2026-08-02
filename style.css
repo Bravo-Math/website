@@ -288,13 +288,13 @@ section div.panel p {
 
 /* --- C2C COLLAPSIBLE SECTIONS --- */
 
-.box .toggler {   /* This is just for a toggler inside a box, like the ones at c2c.html*/
+/* .box .toggler {   
     font-size: 1.7rem;
     font-weight: bold;
     border-bottom: 1px solid var(--accent-color);
     padding-bottom: 0.6em;
     margin-bottom: 1em;
-}
+} */
 
 
 /* --- CONTENT BOXES --- */
