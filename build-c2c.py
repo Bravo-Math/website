@@ -7,7 +7,7 @@ Builds c2c.html from:
 
 and the course files inside:
 
-    curriculum/
+    c2c-curriculum/
 
 The generated file should never be edited directly.
 Edit the template or the individual course files instead.
@@ -25,11 +25,11 @@ ROOT = Path(__file__).parent
 TEMPLATE_FILE = ROOT / "c2c-template.html"
 OUTPUT_FILE = ROOT / "c2c.html"
 
-CURRICULUM_FOLDER = ROOT / "curriculum"
+c2c-curriculum_FOLDER = ROOT / "c2c-curriculum"
 
 
 # ------------------------------------------------------------
-# Curriculum order
+# c2c-curriculum order
 #
 # This list defines the exact order students see the courses.
 # ------------------------------------------------------------
@@ -72,27 +72,27 @@ template = TEMPLATE_FILE.read_text(encoding="utf-8")
 
 
 # ------------------------------------------------------------
-# Build the curriculum
+# Build the c2c-curriculum
 # ------------------------------------------------------------
 
-print("Building curriculum...\n")
+print("Building c2c-curriculum...\n")
 
-curriculum = ""
+c2c-curriculum = ""
 
 for filename in COURSES:
 
-    filepath = CURRICULUM_FOLDER / filename
+    filepath = c2c-curriculum_FOLDER / filename
 
     if not filepath.exists():
         raise FileNotFoundError(
-            f"\nMissing curriculum file:\n\n{filepath}"
+            f"\nMissing c2c-curriculum file:\n\n{filepath}"
         )
 
     print(f"✓ {filename}")
 
     course = filepath.read_text(encoding="utf-8")
 
-    curriculum += (
+    c2c-curriculum += (
         "\n\n"
         "<!-- ========================================================== -->\n"
         f"<!-- {filename} -->\n"
@@ -105,14 +105,14 @@ for filename in COURSES:
 # Replace the placeholder
 # ------------------------------------------------------------
 
-PLACEHOLDER = "<!-- BUILD:CURRICULUM -->"
+PLACEHOLDER = "<!-- BUILD:c2c-curriculum -->"
 
 if PLACEHOLDER not in template:
     raise ValueError(
         f"\nCould not find placeholder:\n\n{PLACEHOLDER}"
     )
 
-output = template.replace(PLACEHOLDER, curriculum)
+output = template.replace(PLACEHOLDER, c2c-curriculum)
 
 
 # ------------------------------------------------------------
