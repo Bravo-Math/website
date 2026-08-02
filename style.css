@@ -29,7 +29,7 @@ body {
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -390,6 +390,7 @@ footer {
   padding: 8px 0;
   width: 100%;
   color: var(--text-color);
+  margin-top: auto;
 }
 
 footer div {
