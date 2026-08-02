@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Builds c2c.html from:
+Build c2c.html from:
 
     c2c-template.html
 
@@ -9,30 +9,30 @@ and the course files inside:
 
     c2c-curriculum/
 
-The generated file should never be edited directly.
+The generated c2c.html should never be edited directly.
 Edit the template or the individual course files instead.
 """
 
 from pathlib import Path
 
 
-# ------------------------------------------------------------
+# ============================================================
 # Files and folders
-# ------------------------------------------------------------
+# ============================================================
 
 ROOT = Path(__file__).parent
 
 TEMPLATE_FILE = ROOT / "c2c-template.html"
 OUTPUT_FILE = ROOT / "c2c.html"
 
-c2c-curriculum_FOLDER = ROOT / "c2c-curriculum"
+C2C_CURRICULUM_FOLDER = ROOT / "c2c-curriculum"
 
 
-# ------------------------------------------------------------
-# c2c-curriculum order
+# ============================================================
+# Course order
 #
 # This list defines the exact order students see the courses.
-# ------------------------------------------------------------
+# ============================================================
 
 COURSES = [
 
@@ -59,40 +59,46 @@ COURSES = [
     "statistics.html",
 
     "scholars-in-school.html",
+
 ]
 
 
-# ------------------------------------------------------------
+# ============================================================
 # Read the template
-# ------------------------------------------------------------
+# ============================================================
 
 print("Reading template...")
+
+if not TEMPLATE_FILE.exists():
+    raise FileNotFoundError(
+        f"Could not find template:\n\n{TEMPLATE_FILE}"
+    )
 
 template = TEMPLATE_FILE.read_text(encoding="utf-8")
 
 
-# ------------------------------------------------------------
-# Build the c2c-curriculum
-# ------------------------------------------------------------
+# ============================================================
+# Read each course
+# ============================================================
 
-print("Building c2c-curriculum...\n")
+print("Building curriculum...\n")
 
-c2c-curriculum = ""
+curriculum = ""
 
 for filename in COURSES:
 
-    filepath = c2c-curriculum_FOLDER / filename
+    filepath = C2C_CURRICULUM_FOLDER / filename
 
     if not filepath.exists():
         raise FileNotFoundError(
-            f"\nMissing c2c-curriculum file:\n\n{filepath}"
+            f"Missing course file:\n\n{filepath}"
         )
 
     print(f"✓ {filename}")
 
-    course = filepath.read_text(encoding="utf-8")
+    course = filepath.read_text(encoding="utf-8").strip()
 
-    c2c-curriculum += (
+    curriculum += (
         "\n\n"
         "<!-- ========================================================== -->\n"
         f"<!-- {filename} -->\n"
@@ -101,25 +107,25 @@ for filename in COURSES:
     )
 
 
-# ------------------------------------------------------------
-# Replace the placeholder
-# ------------------------------------------------------------
+# ============================================================
+# Insert the curriculum into the template
+# ============================================================
 
-PLACEHOLDER = "<!-- BUILD:c2c-curriculum -->"
+PLACEHOLDER = "<!-- BUILD-C2C:CURRICULUM -->"
 
 if PLACEHOLDER not in template:
     raise ValueError(
-        f"\nCould not find placeholder:\n\n{PLACEHOLDER}"
+        f"Could not find placeholder:\n\n{PLACEHOLDER}"
     )
 
-output = template.replace(PLACEHOLDER, c2c-curriculum)
+output = template.replace(PLACEHOLDER, curriculum)
 
 
-# ------------------------------------------------------------
-# Save c2c.html
-# ------------------------------------------------------------
+# ============================================================
+# Write c2c.html
+# ============================================================
 
 OUTPUT_FILE.write_text(output, encoding="utf-8")
 
 print("\nFinished.")
-print("Generated c2c.html")
+print(f"Generated {OUTPUT_FILE.name}")
