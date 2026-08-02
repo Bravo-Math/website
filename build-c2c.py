@@ -8,21 +8,27 @@ CURRICULUM_DIR = Path("c2c-curriculum")
 # Courses, in Counting to Calculus order
 COURSES = [
     ("learning101.html", "Learning 101"),
+
     ("integers1.html", "Integers 1: How Many?"),
     ("integers2.html", "Integers 2: Add & Subtract within 100"),
-    ("integers3.html", "Integers 3: Multiply & Divide within 100"),
+    ("integers3.html", "Integers 3: Multiply and Divide within 100"),
     ("integers4.html", "Integers 4: All Operations within 100"),
     ("integers5.html", "Integers 5: Place Value"),
     ("integers6.html", "Integers 6: Negativity"),
-    ("fractions1.html", "Fractions 1: Fractions Are Numbers"),
-    ("fractions2.html", "Fractions 2: Equivalent Fractions"),
-    ("fractions3.html", "Fractions 3: Arithmetic"),
-    ("fractions4.html", "Fractions 4: Decimals"),
-    ("algebra1.html", "Algebra 1: Variables"),
-    ("algebra2.html", "Algebra 2: Equations"),
-    ("geometry.html", "Geometry"),
-    ("probability.html", "Probability"),
+
+    ("fractions1.html", "Fractions 1: Fractions are Numbers"),
+    ("fractions2.html", "Fractions 2: Whole & Fraction Arithmetic"),
+    ("fractions3.html", "Fractions 3: Fraction & Fraction Arithmetic"),
+    ("fractions4.html", "Fractions 4: Rational Numbers"),
+
+    ("algebra1.html", "Algebra 1: Solutions & Equality"),
+    ("algebra2.html", "Algebra 2: Recursion & Linear Relations"),
+    ("algebra3.html", "Algebra 3: Functions"),
+
+    ("calculus.html", "Calculus"),
+
     ("statistics.html", "Statistics"),
+
     ("scholarsinschool.html", "Scholars in School"),
 ]
 
