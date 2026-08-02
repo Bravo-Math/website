@@ -10,7 +10,7 @@ and the course files inside:
     c2c-curriculum/
 
 The generated c2c.html should never be edited directly.
-Edit the template or the individual course files instead.
+Edit c2c-template.html or the individual course files instead.
 """
 
 from pathlib import Path
@@ -25,14 +25,16 @@ ROOT = Path(__file__).parent
 TEMPLATE_FILE = ROOT / "c2c-template.html"
 OUTPUT_FILE = ROOT / "c2c.html"
 
-C2C_CURRICULUM_FOLDER = ROOT / "c2c-curriculum"
+CURRICULUM_FOLDER = ROOT / "c2c-curriculum"
 
 
 # ============================================================
 # Course order
 #
-# This list defines the exact order students see the courses.
-# Missing files are skipped until you create them.
+# This list determines the exact order in which the courses
+# appear on the website.
+#
+# Missing files are skipped until they are created.
 # ============================================================
 
 COURSES = [
@@ -68,27 +70,27 @@ COURSES = [
 # Read the template
 # ============================================================
 
-print("Reading template...")
+print("Reading c2c-template.html...")
 
 if not TEMPLATE_FILE.exists():
     raise FileNotFoundError(
-        f"Could not find template:\n\n{TEMPLATE_FILE}"
+        f"Template file not found:\n\n{TEMPLATE_FILE}"
     )
 
 template = TEMPLATE_FILE.read_text(encoding="utf-8")
 
 
 # ============================================================
-# Build curriculum
+# Read every course
 # ============================================================
 
-print("Building curriculum...\n")
+print("\nBuilding curriculum...\n")
 
 curriculum = ""
 
 for filename in COURSES:
 
-    filepath = C2C_CURRICULUM_FOLDER / filename
+    filepath = CURRICULUM_FOLDER / filename
 
     if not filepath.exists():
         print(f"Skipping {filename}")
@@ -108,7 +110,7 @@ for filename in COURSES:
 
 
 # ============================================================
-# Replace placeholder
+# Insert curriculum into the template
 # ============================================================
 
 PLACEHOLDER = "<!-- BUILD-C2C:CURRICULUM -->"
@@ -127,5 +129,10 @@ output = template.replace(PLACEHOLDER, curriculum)
 
 OUTPUT_FILE.write_text(output, encoding="utf-8")
 
-print("\nFinished.")
+
+# ============================================================
+# Finished
+# ============================================================
+
+print("\nDone!")
 print(f"Generated {OUTPUT_FILE.name}")
