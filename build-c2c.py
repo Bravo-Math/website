@@ -31,7 +31,7 @@ PLACEHOLDER = "<!-- BUILD-C2C:CURRICULUM -->"
 
 def build_course(title, body):
     return f"""
-<section class="box">
+<section class="box course">
 
     <div class="toggler">{title}</div>
 
