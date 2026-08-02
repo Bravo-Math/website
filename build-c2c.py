@@ -32,6 +32,7 @@ C2C_CURRICULUM_FOLDER = ROOT / "c2c-curriculum"
 # Course order
 #
 # This list defines the exact order students see the courses.
+# Missing files are skipped until you create them.
 # ============================================================
 
 COURSES = [
@@ -78,7 +79,7 @@ template = TEMPLATE_FILE.read_text(encoding="utf-8")
 
 
 # ============================================================
-# Read each course
+# Build curriculum
 # ============================================================
 
 print("Building curriculum...\n")
@@ -90,9 +91,8 @@ for filename in COURSES:
     filepath = C2C_CURRICULUM_FOLDER / filename
 
     if not filepath.exists():
-        raise FileNotFoundError(
-            f"Missing course file:\n\n{filepath}"
-        )
+        print(f"Skipping {filename}")
+        continue
 
     print(f"✓ {filename}")
 
@@ -108,7 +108,7 @@ for filename in COURSES:
 
 
 # ============================================================
-# Insert the curriculum into the template
+# Replace placeholder
 # ============================================================
 
 PLACEHOLDER = "<!-- BUILD-C2C:CURRICULUM -->"
