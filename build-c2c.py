@@ -1,132 +1,71 @@
-#!/usr/bin/env python3
-
-"""
-Build c2c.html from:
-
-    c2c-template.html
-
-and the course files inside:
-
-    c2c-curriculum/
-
-The generated c2c.html should never be edited directly.
-Edit c2c-template.html or the individual course files instead.
-"""
-
 from pathlib import Path
 
-
-# ============================================================
 # Files and folders
-# ============================================================
+TEMPLATE_FILE = "c2c-template.html"
+OUTPUT_FILE = "c2c.html"
+CURRICULUM_DIR = Path("c2c-curriculum")
 
-ROOT = Path(__file__).parent
-
-TEMPLATE_FILE = ROOT / "c2c-template.html"
-OUTPUT_FILE = ROOT / "c2c.html"
-
-CURRICULUM_FOLDER = ROOT / "c2c-curriculum"
-
-
-# ============================================================
-# Course order
-#
-# This list determines the exact order in which the courses
-# appear on the website.
-#
-# Missing files are skipped until they are created.
-# ============================================================
-
+# Courses, in Counting to Calculus order
 COURSES = [
-
-    "learning101.html",
-
-    "integers1.html",
-    "integers2.html",
-    "integers3.html",
-    "integers4.html",
-    "integers5.html",
-    "integers6.html",
-
-    "fractions1.html",
-    "fractions2.html",
-    "fractions3.html",
-    "fractions4.html",
-
-    "algebra1.html",
-    "algebra2.html",
-    "algebra3.html",
-
-    "calculus.html",
-
-    "statistics.html",
-
-    "scholars-in-school.html",
-
+    ("learning101.html", "Learning 101"),
+    ("integers1.html", "Integers 1: How Many?"),
+    ("integers2.html", "Integers 2: Add & Subtract within 100"),
+    ("integers3.html", "Integers 3: Multiply & Divide within 100"),
+    ("integers4.html", "Integers 4: All Operations within 100"),
+    ("integers5.html", "Integers 5: Place Value"),
+    ("integers6.html", "Integers 6: Negativity"),
+    ("fractions1.html", "Fractions 1: Fractions Are Numbers"),
+    ("fractions2.html", "Fractions 2: Equivalent Fractions"),
+    ("fractions3.html", "Fractions 3: Arithmetic"),
+    ("fractions4.html", "Fractions 4: Decimals"),
+    ("algebra1.html", "Algebra 1: Variables"),
+    ("algebra2.html", "Algebra 2: Equations"),
+    ("geometry.html", "Geometry"),
+    ("probability.html", "Probability"),
+    ("statistics.html", "Statistics"),
+    ("scholarsinschool.html", "Scholars in School"),
 ]
-
-
-# ============================================================
-# Read the template
-# ============================================================
-
-print("Reading c2c-template.html...")
-
-if not TEMPLATE_FILE.exists():
-    raise FileNotFoundError(
-        f"Template file not found:\n\n{TEMPLATE_FILE}"
-    )
-
-template = TEMPLATE_FILE.read_text(encoding="utf-8")
-
-
-# ============================================================
-# Read every course
-# ============================================================
-
-print("\nBuilding curriculum...\n")
-
-curriculum = ""
-
-for filename in COURSES:
-
-    filepath = CURRICULUM_FOLDER / filename
-
-    if not filepath.exists():
-        print(f"Skipping {filename}")
-        continue
-
-    print(f"✓ {filename}")
-
-    course = filepath.read_text(encoding="utf-8").strip()
-
-    curriculum += "\n\n" + course
-
-
-# ============================================================
-# Insert curriculum into the template
-# ============================================================
 
 PLACEHOLDER = "<!-- BUILD-C2C:CURRICULUM -->"
 
-if PLACEHOLDER not in template:
-    raise ValueError(
-        f"Could not find placeholder:\n\n{PLACEHOLDER}"
-    )
 
-output = template.replace(PLACEHOLDER, curriculum)
+def build_course(title, body):
+    return f"""
+<section>
+
+    <div class="toggler">
+        <h2>{title}</h2>
+    </div>
+
+    <div class="panel">
+{body}
+    </div>
+
+</section>
+"""
 
 
-# ============================================================
-# Write c2c.html
-# ============================================================
+def main():
+    template = Path(TEMPLATE_FILE).read_text(encoding="utf-8")
 
-OUTPUT_FILE.write_text(output, encoding="utf-8")
+    curriculum = ""
+
+    for filename, title in COURSES:
+        path = CURRICULUM_DIR / filename
+
+        if not path.exists():
+            continue
+
+        body = path.read_text(encoding="utf-8").strip()
+
+        curriculum += "\n\n" + build_course(title, body)
+
+    output = template.replace(PLACEHOLDER, curriculum)
+
+    Path(OUTPUT_FILE).write_text(output, encoding="utf-8")
+
+    print(f"Built {OUTPUT_FILE}")
 
 
-# ============================================================
-# Finished
-# ============================================================
-
-print("\nDone!")
-print(f"Generated {OUTPUT_FILE.name}")
+if __name__ == "__main__":
+    main()
