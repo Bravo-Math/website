@@ -245,8 +245,10 @@ section .toggler {
 
      /* This is just for a toggler inside a box, like the ones at c2c.html*/
 .box .toggler {
-    font-size: 1.75rem;
-    border-bottom: 1px solid var(--border-color);
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 0.5em;
 }
 
 section .toggler:after {
