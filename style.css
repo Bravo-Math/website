@@ -291,6 +291,10 @@ section div.panel p {
     margin-bottom: 1em;
 }
 
+.course div.panel {
+    border-bottom: none;
+}
+
 
 /* --- CONTENT BOXES --- */
 
