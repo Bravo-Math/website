@@ -33,9 +33,7 @@ def build_course(title, body):
     return f"""
 <section class="box">
 
-    <div class="toggler">
-        <h2>{title}</h2>
-    </div>
+    <div class="toggler">{title}</div>
 
     <div class="panel">
 {body}
