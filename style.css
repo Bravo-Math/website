@@ -230,7 +230,10 @@ nav .current::after {
   100% { transform: translateY(0px); opacity: 1; }
 }
 
-/* --- COLLAPSIBLE SECTIONS --- */
+
+
+
+/* --- SHARED COLLAPSIBLE SECTIONS --- */
 
 section .toggler {
   cursor: pointer;
@@ -241,15 +244,6 @@ section .toggler {
   font-size: 1.2rem;
   color: var(--link-color);
   font-weight: 700;
-}
-
-     
-.box .toggler {   /* This is just for a toggler inside a box, like the ones at c2c.html*/
-    font-size: 1.7rem;
-    font-weight: bold;
-    border-bottom: 1px solid var(--accent-color);
-    padding-bottom: 0.6em;
-    margin-bottom: 1em;
 }
 
 section .toggler:after {
@@ -284,6 +278,25 @@ section div.panel p {
   margin-top: 0;
 }
 
+
+
+
+/* --- FAQ COLLAPSIBLE SECTIONS --- */
+
+
+
+
+/* --- C2C COLLAPSIBLE SECTIONS --- */
+
+.box .toggler {   /* This is just for a toggler inside a box, like the ones at c2c.html*/
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 0.6em;
+    margin-bottom: 1em;
+}
+
+
 /* --- CONTENT BOXES --- */
 
 .box {
@@ -296,6 +309,9 @@ section div.panel p {
 main:last-of-type {
   margin-bottom: 40px;
 }
+
+
+
 
 /* --- CONTACT ROWS --- */
 
