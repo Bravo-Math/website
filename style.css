@@ -311,13 +311,15 @@ section div.panel p {
     border-top: 1px solid var(--accent-color);
     border-left: none;
     border-bottom: none;
-    padding-top: 1rem;
-    margin-top: 3rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
     padding-left: 0;
 }
 
-/*Commented out temporarily
-
+/* The first H2 sits directly under the course title. */
+.course .panel > h2:first-child {
+    border-top: none;
+    }
 
 
 
