@@ -310,6 +310,7 @@ section div.panel p {
     /* Course content headings should not have the global underline. */
 .course h2 {
     border-left: 4px solid var(--accent-color);
+    border-bottom: none;
     padding-left: 1rem;
     padding-bottom: 0;
     margin-top: 3rem;
