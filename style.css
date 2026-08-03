@@ -298,7 +298,7 @@ section div.panel p {
 .course .toggler {
     font-size: 1.7rem;
     font-weight: bold;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.6em;
     margin-bottom: 1em;
 }
@@ -313,7 +313,6 @@ section div.panel p {
     border-bottom: none;
     padding-top: 1rem;
     margin-top: 3rem;
-
     padding-left: 0;
 }
 
