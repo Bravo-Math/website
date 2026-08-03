@@ -239,17 +239,29 @@ section .toggler {
   cursor: pointer;
   width: 100%;
   padding: 14px 0;
-  text-align: left;
   transition: none;
   font-size: 1.2rem;
   color: var(--link-color);
   font-weight: 700;
+
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+
+  /* Align the + with the top of the title block,
+     rather than vertically centering it. */
+  align-items: flex-start;
+
+  /* Small gap if the title wraps. */
+  gap: 1rem;
 }
 
 section .toggler:after {
   content: '\002B';
   font-weight: bold;
-  float: right;
+
+  /* Keep the + from shrinking. */
+  flex-shrink: 0;
 }
 
 section.open .toggler {
