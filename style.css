@@ -310,7 +310,7 @@ section div.panel p {
 .course h2 {
     border-left: none;
 
-    border-top: 2px solid var(--accent-color);
+    border-top: 1px solid var(--accent-color);
 
     padding-top: 1rem;
     margin-top: 3rem;
