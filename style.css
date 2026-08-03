@@ -307,6 +307,22 @@ section div.panel p {
     border-bottom: none;
 }
 
+    /* Course content headings should not have the global underline. */
+.course h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 1.25rem;
+}
+
+    /* Horizontal rules separate major sections within a course. */
+.course hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 2.5rem 0;
+}
+
+
+
 
 /* --- CONTENT BOXES --- */
 
