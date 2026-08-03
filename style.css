@@ -307,22 +307,19 @@ section div.panel p {
     border-bottom: none;
 }
 
-    /* Course content headings should not have the global underline. */
 .course h2 {
-    border-left: 4px solid var(--accent-color);
-    border-bottom: none;
-    padding-left: 1rem;
-    padding-bottom: 0;
+    border-left: none;
+
+    border-top: 2px solid var(--accent-color);
+
+    padding-top: 1rem;
     margin-top: 3rem;
-    margin-bottom: 1.25rem;
+
+    padding-left: 0;
 }
 
-    /* Horizontal rules separate major sections within a course. */
-.course hr {
-    border: none;
-    border-top: 2px solid var(--border-color);
-    margin: 2.5rem 0;
-}
+/*Commented out temporarily
+
 
 
 
