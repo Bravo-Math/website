@@ -31,8 +31,7 @@ COURSES = [
     ("calculus.html", "Calculus"),
 
     ("statistics.html", "Statistics"),
-
-    ("scholarsinschool.html", "Scholars in School"),
+    
 ]
 
 PLACEHOLDER = "<!-- BUILD-C2C:CURRICULUM -->"
