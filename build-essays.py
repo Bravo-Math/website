@@ -4,7 +4,7 @@ from datetime import datetime
 # Files and folders
 TEMPLATE_FILE = "essay-template.html"
 OUTPUT_DIR = Path("essays")
-INDEX_FILE = "essays.html"
+INDEX_FILE = "library.html"
 ESSAYS_DIR = Path("essays-source")
 
 TITLE_PLACEHOLDER = "<!-- BUILD-ESSAYS:TITLE -->"
