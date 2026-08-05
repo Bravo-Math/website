@@ -100,23 +100,24 @@ def main():
 
 </header>
 
-<main class="essay">
+<main class="essays">
 
 <h1>Essays</h1>
 
-<ul>
+<div class="essay-list">
 """
 
     for essay in essays:
         index += f"""
-    <li>
+    <div class="essay-preview">
         <a href="essays/{essay['filename']}">{essay['title']}</a><br>
         <span class="essay-date">{essay['date']}</span>
-    </li>
+    </div>
+
 """
 
     index += """
-</ul>
+</div>
 
 </main>
 
