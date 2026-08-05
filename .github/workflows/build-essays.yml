@@ -8,6 +8,7 @@ on:
       - "essay-template.html"   # Rebuild if the essay template changes.
       - "build-essays.py"       # Rebuild if the build script changes.
       - "essays-source/**"      # Rebuild if any essay source file changes.
+      - ".github/workflows/build-essays.yml" # Rebuild if workflow changes.
 
 permissions:
   contents: write
