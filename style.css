@@ -378,6 +378,19 @@ main:last-of-type {
   color: var(--link-color);
 }
 
+
+
+/* --- Column width for essays --- */
+
+main.essay {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+
+
+
 /* --- UTILITIES & MISC --- */
 
 .icon {
