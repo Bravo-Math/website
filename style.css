@@ -385,11 +385,7 @@ main:last-of-type {
 main.essay {
     max-width: 525px;
     margin: 0;
-    padding: 2rem 1.5rem;
-}
-
-main.essays {
-    padding: 0 1.5rem;
+    padding: 0rem 1.5rem;
 }
 
 main.essays h1 {
