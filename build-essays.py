@@ -100,7 +100,7 @@ def main():
 
 </header>
 
-<main class="essays">
+<main class="essay-list">
 
 <h1>Essays</h1>
 
