@@ -382,13 +382,13 @@ main:last-of-type {
 
 /* --- Essays --- */
 
-main.essay {
+main.essay-page {
     max-width: 525px;
     margin: 0;
     padding: 0rem 1.5rem;
 }
 
-main.essays h1 {
+main.essay-list h1 {
     text-align: left;
 }
 
