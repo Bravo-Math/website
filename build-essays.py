@@ -1,10 +1,8 @@
 from pathlib import Path
-from datetime import datetime
 
 # Files and folders
 TEMPLATE_FILE = "essay-template.html"
 OUTPUT_DIR = Path("essays")
-INDEX_FILE = "library.html"
 ESSAYS_DIR = Path("essays-source")
 
 TITLE_PLACEHOLDER = "<!-- BUILD-ESSAYS:TITLE -->"
@@ -16,7 +14,7 @@ def main():
 
     OUTPUT_DIR.mkdir(exist_ok=True)
 
-    essays = []
+    count = 0
 
     for path in ESSAYS_DIR.glob("*.html"):
 
@@ -36,7 +34,6 @@ def main():
 
         title = metadata["Title"]
         date = metadata["Date"]
-        tags = metadata.get("Tags", "")
 
         output = template
 
@@ -57,80 +54,9 @@ def main():
             encoding="utf-8"
         )
 
-        essays.append({
-            "title": title,
-            "date": date,
-            "tags": tags,
-            "filename": path.name,
-            "sort_date": datetime.strptime(date, "%B %Y")
-        })
+        count += 1
 
-    essays.sort(
-        key=lambda essay: essay["sort_date"],
-        reverse=True
-    )
-
-    index = """<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Essays | Bravo Math</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo">
-        <a href="/index.html">Bravo Math <img src="/images/shapes.png" class="shapes" alt=""></a>
-    </div>
-
-    <nav>
-        <a href="/about.html" class="button">About</a>
-        <a href="/c2c.html" class="button">Counting to Calculus</a>
-        <a href="/library.html" class="current button">Library</a>
-        <a href="/contact.html" class="button">Contact</a>
-        <a href="/jobs.html" class="button">Jobs</a>
-    </nav>
-
-</header>
-
-<main class="essay-list">
-
-<h1>Essays</h1>
-
-<div class="essay-list">
-"""
-
-    for essay in essays:
-        index += f"""
-    <div class="essay-preview">
-        <a href="essays/{essay['filename']}">{essay['title']}</a><br>
-        <span class="essay-date">{essay['date']}</span>
-    </div>
-
-"""
-
-    index += """
-</div>
-
-</main>
-
-</body>
-</html>
-"""
-
-    Path(INDEX_FILE).write_text(
-        index,
-        encoding="utf-8"
-    )
-
-    print(f"Built {len(essays)} essay(s).")
+    print(f"Built {count} essay(s).")
 
 
 if __name__ == "__main__":
