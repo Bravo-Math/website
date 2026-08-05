@@ -1,6 +1,7 @@
 name: Build Essays
 
-# Run this workflow whenever an essay changes.
+# Automatically rebuild the published essay pages whenever the essay
+# template, build script, or essay source files change.
 on:
   push:
     paths:
@@ -24,21 +25,22 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Build essays
+      - name: Build published essay pages
         run: python build-essays.py
 
-      - name: Commit generated files
+      - name: Commit generated essay pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Only the generated essay pages are committed.
-          # library.html is now maintained by hand.
+          # library.html is maintained manually and is never modified
+          # by this workflow.
           git add essays
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No generated essay pages changed."
           else
-            git commit -m "Automatically rebuild essays"
+            git commit -m "Automatically rebuild essay pages"
             git push
           fi
