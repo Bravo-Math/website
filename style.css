@@ -383,7 +383,7 @@ main:last-of-type {
 /* --- Column width for essays --- */
 
 main.essay {
-    max-width: 750px;
+    max-width: 525px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
 }
