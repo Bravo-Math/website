@@ -93,7 +93,7 @@ def main():
     <nav>
         <a href="/about.html" class="button">About</a>
         <a href="/c2c.html" class="button">Counting to Calculus</a>
-        <a href="/essays.html" class="current button">Essays</a>
+        <a href="/library.html" class="current button">Library</a>
         <a href="/contact.html" class="button">Contact</a>
         <a href="/jobs.html" class="button">Jobs</a>
     </nav>
