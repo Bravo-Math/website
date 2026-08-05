@@ -85,13 +85,19 @@ def main():
 <body>
 
 <header>
+
+    <div class="logo">
+        <a href="/index.html">Bravo Math <img src="/images/shapes.png" class="shapes" alt=""></a>
+    </div>
+
     <nav>
-        <a href="about.html" class="button">About</a>
-        <a href="c2c.html" class="button">Counting to Calculus</a>
-        <span class="current button">Essays</span>
-        <a href="contact.html" class="button">Contact</a>
-        <a href="jobs.html" class="button">Jobs</a>
+        <a href="/about.html" class="button">About</a>
+        <a href="/c2c.html" class="button">Counting to Calculus</a>
+        <a href="/essays.html" class="current button">Essays</a>
+        <a href="/contact.html" class="button">Contact</a>
+        <a href="/jobs.html" class="button">Jobs</a>
     </nav>
+
 </header>
 
 <main class="essay">
