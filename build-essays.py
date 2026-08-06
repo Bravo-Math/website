@@ -14,6 +14,11 @@ def main():
 
     OUTPUT_DIR.mkdir(exist_ok=True)
 
+    # Delete all previously generated essay pages.
+    # The output directory should always be an exact mirror of essays-source.
+    for output_file in OUTPUT_DIR.glob("*.html"):
+        output_file.unlink()
+    
     count = 0
 
     for path in ESSAYS_DIR.glob("*.html"):
