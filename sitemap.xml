@@ -1,1 +1,51 @@
-placeholder text
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml tells search engines which important public URLs on
+  Bravo Math are available to discover and crawl.
+
+  This sitemap includes the main public pages and published essays.
+  It intentionally does NOT include individual course pages, PDFs,
+  source files, templates, build files, CSS, JavaScript, images,
+  favicons, or 404.html.
+
+  The sitemap does not force search engines to index a page.
+  It simply gives crawlers an explicit list of important URLs.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://bravomath.com/</loc>
+    </url>
+
+    <!-- Main public pages -->
+    <url>
+        <loc>https://bravomath.com/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bravomath.com/c2c.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bravomath.com/contact.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bravomath.com/jobs.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bravomath.com/library.html</loc>
+    </url>
+
+    <!-- Published essays -->
+    <url>
+        <loc>https://bravomath.com/essays/education-great-stagnation.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bravomath.com/essays/revolutionaryhypotheses.html</loc>
+    </url>
+
+</urlset>
