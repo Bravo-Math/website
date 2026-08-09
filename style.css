@@ -437,6 +437,12 @@ ol li {
   padding-left: 10px;
 }
 
+/* Tighter spacing for nested numbered lists,
+   such as the a. and b. items in the essays. */
+ol ol li {
+  margin-bottom: 0.4rem;
+}
+
 ul ul {
   margin-top: auto;
 }
