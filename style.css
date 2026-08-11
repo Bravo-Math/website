@@ -69,11 +69,6 @@ p {
   margin-bottom: 1.2rem;
 }
 
-li {
-    font-size: 1.05rem;
-    margin-bottom: 0.7rem;
-}
-
 b {
   font-weight: 700;
 }
@@ -413,18 +408,17 @@ main.essay-list h1 {
 
 
 
-/* --- UTILITIES & MISC --- */
-
-.icon {
-  height: 20px;
-  padding-left: 6px;
-  vertical-align: text-bottom;
-}
+/* --- LISTS --- */
 
 ul {
   margin-top: 0;
   list-style-position: outside;
   padding-left: 1.5em;
+}
+
+li {
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
 }
 
 ol {
@@ -437,19 +431,20 @@ ol li {
   padding-left: 10px;
 }
 
-/* Tighter spacing for nested numbered lists,
-   such as the a. and b. items in the essays. */
-ol ol li {
-  margin-bottom: 0.4rem;
+
+
+
+/* --- UTILITIES & MISC --- */
+
+.icon {
+  height: 20px;
+  padding-left: 6px;
+  vertical-align: text-bottom;
 }
 
-ul ul {
-  margin-top: auto;
-}
 
-ul ul li {
-  margin-bottom: 0.4rem;   /* Slightly tighter spacing for nested lists. */
-}
+
+
 
 .apply_now_container {
   margin-top: 2em;
