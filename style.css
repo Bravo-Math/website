@@ -410,21 +410,36 @@ main.essay-list h1 {
 
 /* --- LISTS --- */
 
-ul {
+/* --- LISTS --- */
+
+ul,
+ol {
   margin-top: 0;
+  margin-bottom: 1rem;
   list-style-position: outside;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+ol {
   padding-left: 1.5em;
 }
 
 li {
-    font-size: 1.05rem;
-    margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
 }
 
-ol {
-  margin-top: 0em;
-  list-style-position: outside;
-  padding-left: 20px;
+li:last-child {
+  margin-bottom: 0;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
 }
 
 ol li {
