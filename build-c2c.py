@@ -10,8 +10,6 @@ COURSES = [
 
     ("preface.html", "Preface"),
     
-    ("learning101.html", "Learning 101"),
-
     ("integers1.html", "Integers 1: How Many?"),
     ("integers2.html", "Integers 2: Add & Subtract within 100"),
     ("integers3.html", "Integers 3: Multiply and Divide within 100"),
