@@ -553,27 +553,34 @@ header {
 /* Mobile navigation:
    Keep the desktop tab appearance, but allow the five tabs
    to wrap naturally across multiple rows on narrow screens. */
+/* Mobile navigation:
+   Keep the tabs horizontal and allow them to wrap naturally.
+   Add the same visual breathing room below the tabs
+   that exists between the upper gold line and the tabs. */
 nav {
     margin-top: 16px;
     justify-content: flex-start;
-    flex-direction: row;              /* Keep tabs horizontal. */
-    flex-wrap: wrap;                  /* Allow tabs to move to another row. */
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-end;
     gap: 7px;
+    padding-bottom: 20px;             /* ADD: Space between tabs and bottom gold line. */
     border-bottom: 1px solid var(--accent-color);
 }
 
 /* Keep each tab at its natural width.
    Most importantly, prevent "Counting to Calculus" from
    breaking into multiple lines. */
+/* Mobile tabs:
+   Complete the gray outline on all four sides,
+   and round the bottom corners to match the top corners. */
 nav a,
 nav .current {
     padding: 12px 16px;
-    border: 1px solid var(--border-color);
-    border-bottom: none;
-    border-radius: 8px 8px 0 0;
+    border: 1px solid var(--border-color);  /* CHANGE: Gray outline now surrounds the entire tab. */
+    border-radius: 8px;                     /* CHANGE: Round all four corners. */
     width: auto;
-    white-space: nowrap;
+    white-space: nowrap;                    /* KEEP: Prevent "Counting to Calculus" from wrapping. */
 }
 
 /* Keep the existing active-page highlight.
@@ -581,6 +588,12 @@ nav .current {
 nav .current {
     background-color: var(--accent-color);
     color: var(--background-color);
+}
+
+/* Mobile tabs now have a complete gray outline,
+   so the desktop border-hiding overlay is not needed. */
+nav .current::after {
+    display: none;    /* ADD: Let the gray bottom border remain visible. */
 }
     
 nav section div.panel {
