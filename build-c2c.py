@@ -8,7 +8,7 @@ CURRICULUM_DIR = Path("c2c-curriculum")
 # Courses, in Counting to Calculus order
 COURSES = [
 
-    ("preface.html", "Preface"),
+    ("welcome.html", "Welcome!"),
     
     ("integers1.html", "Integers 1: How Many?"),
     ("integers2.html", "Integers 2: Add & Subtract within 100"),
