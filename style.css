@@ -550,29 +550,38 @@ header {
   border-bottom: 2px solid var(--accent-color);
 }
 
+/* Mobile navigation:
+   Keep the desktop tab appearance, but allow the five tabs
+   to wrap naturally across multiple rows on narrow screens. */
 nav {
-    margin-top: 16px; 
-    justify-content: flex-start;   /* KEEP */
-    flex-direction: column;        /* ADD: Stack the tabs vertically. */
-    align-items: stretch;          /* ADD: Make the tabs fill the available width. */
-    gap: 0;                     
-    border-bottom: none;           
-  }
-
-nav a,
-nav .current {
-  padding: 14px 16px;                 /* KEEP */
-  border: none;                       /* ADD: Remove the desktop tab border. */
-  border-bottom: 1px solid var(--border-color); /* ADD */
-  border-radius: 0;                   /* ADD: Remove the desktop tab shape. */
-  width: 100%;                        /* ADD: Full-width rows. */
-  box-sizing: border-box;             /* ADD: Include padding in the width. */
+    margin-top: 16px;
+    justify-content: flex-start;
+    flex-direction: row;              /* Keep tabs horizontal. */
+    flex-wrap: wrap;                  /* Allow tabs to move to another row. */
+    align-items: flex-end;
+    gap: 7px;
+    border-bottom: 1px solid var(--accent-color);
 }
 
+/* Keep each tab at its natural width.
+   Most importantly, prevent "Counting to Calculus" from
+   breaking into multiple lines. */
+nav a,
+nav .current {
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    width: auto;
+    white-space: nowrap;
+}
+
+/* Keep the existing active-page highlight.
+   --accent-color is #a67c1e in this stylesheet. */
 nav .current {
     background-color: var(--accent-color);
     color: var(--background-color);
-  }
+}
     
 nav section div.panel {
     right: 15px;
@@ -583,15 +592,6 @@ nav section div.panel {
 nav a:last-child,
 nav .current:last-child {
   margin-bottom: 20px;   /* ADD: Extra space after the final navigation item only. */
-}
-
-/* Mobile only: show a subtle chevron on navigation links. */
-nav a::after {
-  content: "›";                 /* ADD: Right-pointing chevron. */
-  float: right;                 /* ADD: Push it to the right edge. */
-  color: var(--text-color);   /* ADD: Keep it subtle. */
-  font-size: 1.2rem;            /* ADD: Slightly larger than the text. */
-  font-weight: normal;          /* ADD: Prevent it from looking heavy. */
 }
 
 h1 {
