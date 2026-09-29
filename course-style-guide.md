@@ -20,7 +20,7 @@ Responsibilities include:
 - Recommending improvements.
 Suggestions are encouraged whenever they improve the curriculum.
 ## Reference Implementation
-The latest version of `learning101.html` is the reference implementation.
+The latest version of `integers1.html` is the reference implementation.
 Future courses should feel like they were written alongside it.
 ## HTML Structure
 ### H1
