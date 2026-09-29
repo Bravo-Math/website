@@ -564,8 +564,8 @@ nav {
     flex-wrap: wrap;
     align-items: flex-end;
     gap: 7px;
-    padding-bottom: 20px;             /* ADD: Space between tabs and bottom gold line. */
-    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 16px;             /* ADD: Space between tabs and bottom gold line. */
+    border-bottom: 2px solid var(--accent-color);
 }
 
 /* Keep each tab at its natural width.
