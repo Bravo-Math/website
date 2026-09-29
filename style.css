@@ -407,9 +407,20 @@ main.essay-list h1 {
 }
 
 
+/* --- TABLES --- */
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
 
-/* --- LISTS --- */
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    text-align: left;
+}
+
 
 /* --- LISTS --- */
 
