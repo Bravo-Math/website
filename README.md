@@ -8,17 +8,18 @@ Official website for Bravo Math.
 
 ## Edit directly
 
-- index.html
-- about.html
-- library.html
-- contact.html
-- jobs.html
-- style.css
-- essay-template.html
-- c2c-template.html
-- build-essays.py
-- build-c2c.py
-- Anything inside `essays-source/`
+* index.html
+* about.html
+* library.html
+* contact.html
+* jobs.html
+* style.css
+* essay-template.html
+* c2c-template.html
+* build-essays.py
+* build-c2c.py
+* Anything inside `essays-source/`
+* Anything inside `c2c-curriculum/`
 
 ---
 
@@ -26,8 +27,8 @@ Official website for Bravo Math.
 
 These files are generated automatically.
 
-- Anything inside `essays/`
-- c2c.html
+* Anything inside `essays/`
+* c2c.html
 
 Edit their source files instead.
 
@@ -45,6 +46,7 @@ Edit their source files instead.
 │
 ├── c2c-template.html
 ├── c2c.html
+├── c2c-curriculum/
 │
 ├── essay-template.html
 ├── essays/
@@ -68,10 +70,10 @@ Keep the website simple.
 
 Whenever possible:
 
-- Edit source files, not generated files.
-- Automate repetitive work.
-- Avoid unnecessary automation.
-- Prefer simple architecture over clever architecture.
+* Edit source files, not generated files.
+* Automate repetitive work.
+* Avoid unnecessary automation.
+* Prefer simple architecture over clever architecture.
 
 ---
 
@@ -81,8 +83,8 @@ Every page follows the same `<head>`.
 
 ## Required customization
 
-- `<title>`
-- `<meta name="description">`
+* `<title>`
+* `<meta name="description">`
 
 Everything else should remain identical.
 
@@ -96,13 +98,25 @@ Never edit:
 c2c.html
 ```
 
-Instead edit:
+The individual curriculum pages are stored in:
+
+```
+c2c-curriculum/
+```
+
+The C2C build script assembles those pages using:
+
+```
+build-c2c.py
+```
+
+The overall page structure is controlled by:
 
 ```
 c2c-template.html
 ```
 
-Then rebuild.
+Edit the appropriate source file, then rebuild.
 
 ---
 
@@ -134,9 +148,9 @@ GitHub Actions automatically rebuilds the published essay pages.
 
 Sections:
 
-- Latest Updates
-- Resources
-- Essays
+* Latest Updates
+* Resources
+* Essays
 
 Only the essay pages are generated.
 
@@ -146,9 +160,9 @@ Only the essay pages are generated.
 
 The essay build workflow runs whenever one of these changes:
 
-- `essay-template.html`
-- `build-essays.py`
-- anything inside `essays-source/`
+* `essay-template.html`
+* `build-essays.py`
+* anything inside `essays-source/`
 
 It regenerates the contents of:
 
@@ -158,17 +172,25 @@ essays/
 
 It never edits `library.html`.
 
+The Counting to Calculus build workflow rebuilds:
+
+```
+c2c.html
+```
+
+from the C2C source files and build files.
+
 ---
 
 # Future Ideas
 
 Possible future improvements:
 
-- Generate essay descriptions automatically.
-- Organize essays by topic.
-- Improve SEO.
-- Redirect obsolete URLs.
-- Student login.
-- Assignment submission.
-- Progress tracking.
-- Site search.
+* Generate essay descriptions automatically.
+* Organize essays by topic.
+* Improve SEO.
+* Redirect obsolete URLs.
+* Student login.
+* Assignment submission.
+* Progress tracking.
+* Site search.
