@@ -131,29 +131,6 @@ nav a, nav .current {
   font-size: 1rem;
 }
 
-/* Bottom corners facing another tab curve into the gap. */
-nav a:first-child {
-  border-bottom-right-radius: 8px;
-}
-
-nav a:nth-child(2),
-nav a:nth-child(3),
-nav a:nth-child(4) {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-nav a:last-child {
-  border-bottom-left-radius: 8px;
-}
-
-/* The active tab has no bottom border. */
-nav .current {
-  border-bottom: none;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
 nav a:hover {
   background-color: var(--hover-background-color);
   color: #fff;
@@ -604,29 +581,6 @@ nav .current {
     border-top-right-radius: 8px;
     width: auto;
     white-space: nowrap;
-}
-
-/* Curve only the corners facing another tab. */
-nav a:first-child {
-    border-bottom-right-radius: 8px;
-}
-
-nav a:nth-child(2),
-nav a:nth-child(3),
-nav a:nth-child(4) {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-nav a:last-child {
-    border-bottom-left-radius: 8px;
-}
-
-/* Active tab: no bottom border. */
-nav .current {
-    border-bottom: none;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 /* Keep the existing active-page highlight.
