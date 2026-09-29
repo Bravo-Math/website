@@ -126,10 +126,32 @@ nav a, nav .current {
   color: var(--text-color);
   background-color: var(--background-color);
   border: 1px solid var(--border-color);
-  border-bottom: none;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   font-size: 1rem;
+}
+
+/* Bottom corners facing another tab curve into the gap. */
+nav a:first-child {
+  border-bottom-right-radius: 8px;
+}
+
+nav a:nth-child(2),
+nav a:nth-child(3),
+nav a:nth-child(4) {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+nav a:last-child {
+  border-bottom-left-radius: 8px;
+}
+
+/* The active tab has no bottom border. */
+nav .current {
+  border-bottom: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 nav a:hover {
@@ -577,10 +599,34 @@ nav {
 nav a,
 nav .current {
     padding: 12px 16px;
-    border: 1px solid var(--border-color);  /* CHANGE: Gray outline now surrounds the entire tab. */
-    border-radius: 8px;                     /* CHANGE: Round all four corners. */
+    border: 1px solid var(--border-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     width: auto;
-    white-space: nowrap;                    /* KEEP: Prevent "Counting to Calculus" from wrapping. */
+    white-space: nowrap;
+}
+
+/* Curve only the corners facing another tab. */
+nav a:first-child {
+    border-bottom-right-radius: 8px;
+}
+
+nav a:nth-child(2),
+nav a:nth-child(3),
+nav a:nth-child(4) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+nav a:last-child {
+    border-bottom-left-radius: 8px;
+}
+
+/* Active tab: no bottom border. */
+nav .current {
+    border-bottom: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Keep the existing active-page highlight.
