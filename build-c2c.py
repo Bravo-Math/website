@@ -9,6 +9,8 @@ CURRICULUM_DIR = Path("c2c-curriculum")
 COURSES = [
 
     ("welcome.html", "Welcome!"),
+
+    ("courseexpectations.html", "Course Expectations and Resources"),
     
     ("integers1.html", "Integers 1: How Many?"),
     ("integers2.html", "Integers 2: Add & Subtract within 100"),
