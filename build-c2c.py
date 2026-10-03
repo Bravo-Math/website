@@ -10,7 +10,7 @@ COURSES = [
 
     ("welcome.html", "Welcome!"),
 
-    ("courseexpectations.html", "Course Expectations and Resources"),
+    ("courseexpectations.html", "Course Expectations &amp; Resources"),
     
     ("integers1.html", "Integers 1: How Many?"),
     ("integers2.html", "Integers 2: Add & Subtract within 100"),
